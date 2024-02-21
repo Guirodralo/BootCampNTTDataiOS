@@ -211,3 +211,76 @@ var resultadoSumatoriaXY = nuevoValorOptional! + String(ySumatoria)
 if let resultadoSumatoria = nuevoValorOptional {
     print(resultadoSumatoria)
 }
+
+
+//MARK: -Funciones
+
+func miSerieFavorita() {
+    print("Perdidos")
+}
+
+miSerieFavorita()
+
+func funcionRetornaString () -> String {
+    "Hola mundo"
+}
+
+let varRetornoString = funcionRetornaString()
+
+print(varRetornoString)
+
+func miFuncionConAtributos(mensaje: String){
+    print(mensaje)
+}
+
+miFuncionConAtributos(mensaje: "hola")
+
+func numerosSecuencia (a: Int, b: Int, c: Int) -> Int {
+    return (a * b) + c
+}
+
+let numerosSec = numerosSecuencia(a: 2, b: 4, c: 1)
+
+print(numerosSec)
+
+func hola(nombrePersona: String) -> String {
+    let saludo = "Hola" + " " + nombrePersona + "!"
+    return saludo
+}
+
+var saludara = hola(nombrePersona: "Andres")
+print(saludara)
+
+func holaDeNuevo(nombrePersona: String) -> String {
+    let saludo = "Hola" + " " + nombrePersona + "!"
+    return saludo
+}
+
+func holaAmigos(nombrePersona: String, listoSaludar: Bool) -> String {
+        if listoSaludar {
+            return hola(nombrePersona: "Andres")
+        } else {
+            return holaDeNuevo(nombrePersona: "Felipe")
+        }
+    
+}
+
+print(holaAmigos(nombrePersona: "Andres", listoSaludar: true))
+
+func mutacionParametros(a: Int, b: Int, multiply c:Int) -> Int {
+//    var aux = 3
+//    c = aux
+    return (a + b) + c
+}
+
+mutacionParametros(a: 2, b: 3, multiply: 4)
+
+var numeroPi = 3
+
+//Si ponemos inout delante del tipo lo hacemos mutable a ese parametro
+func funcionInOut(numero: inout Int){
+    numero += 3
+}
+
+funcionInOut(numero: &numeroPi)
+print(numeroPi)
