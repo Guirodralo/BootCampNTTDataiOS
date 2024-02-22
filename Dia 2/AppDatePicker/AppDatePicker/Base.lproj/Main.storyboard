@@ -53,10 +53,62 @@
                     <view key="view" contentMode="scaleToFill" id="Er2-EY-gj8">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="_Titulo del queso" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9lU-5S-aCS">
+                                <rect key="frame" x="20" y="122" width="374" height="21"/>
+                                <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Opo-Nh-GOJ">
+                                <rect key="frame" x="20" y="177" width="374" height="112"/>
+                                <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="112" id="GtT-Lt-C7L"/>
+                                </constraints>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="hy6-e3-wem">
+                                <rect key="frame" x="20" y="341" width="374" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="h7G-0D-23I"/>
+                                </constraints>
+                            </imageView>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1cS-uX-iW2">
+                                <rect key="frame" x="20" y="591" width="374" height="162"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="162" id="rxP-JO-0cd"/>
+                                </constraints>
+                            </pickerView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="pW4-Kz-3Ye"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="pW4-Kz-3Ye" firstAttribute="trailing" secondItem="hy6-e3-wem" secondAttribute="trailing" constant="20" id="13E-Rg-vEv"/>
+                            <constraint firstItem="hy6-e3-wem" firstAttribute="leading" secondItem="pW4-Kz-3Ye" secondAttribute="leading" constant="20" id="1JM-LT-mfW"/>
+                            <constraint firstItem="hy6-e3-wem" firstAttribute="top" secondItem="Opo-Nh-GOJ" secondAttribute="bottom" constant="52" id="6pp-v7-r75"/>
+                            <constraint firstItem="9lU-5S-aCS" firstAttribute="leading" secondItem="pW4-Kz-3Ye" secondAttribute="leading" constant="20" id="80z-vj-Ntt"/>
+                            <constraint firstItem="1cS-uX-iW2" firstAttribute="leading" secondItem="pW4-Kz-3Ye" secondAttribute="leading" constant="20" id="8XQ-du-v4y"/>
+                            <constraint firstItem="pW4-Kz-3Ye" firstAttribute="trailing" secondItem="Opo-Nh-GOJ" secondAttribute="trailing" constant="20" id="Iu9-yW-SFO"/>
+                            <constraint firstItem="pW4-Kz-3Ye" firstAttribute="trailing" secondItem="1cS-uX-iW2" secondAttribute="trailing" constant="20" id="Lkv-4A-HGC"/>
+                            <constraint firstItem="pW4-Kz-3Ye" firstAttribute="trailing" secondItem="9lU-5S-aCS" secondAttribute="trailing" constant="20" id="Mho-c9-wNx"/>
+                            <constraint firstItem="Opo-Nh-GOJ" firstAttribute="top" secondItem="9lU-5S-aCS" secondAttribute="bottom" constant="34" id="R33-qm-DeM"/>
+                            <constraint firstItem="Opo-Nh-GOJ" firstAttribute="leading" secondItem="pW4-Kz-3Ye" secondAttribute="leading" constant="20" id="W6C-gP-Be1"/>
+                            <constraint firstItem="9lU-5S-aCS" firstAttribute="top" secondItem="pW4-Kz-3Ye" secondAttribute="top" constant="30" id="lSv-Gp-83h"/>
+                            <constraint firstItem="1cS-uX-iW2" firstAttribute="top" secondItem="hy6-e3-wem" secondAttribute="bottom" constant="50" id="vCc-Gd-3vZ"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="UYh-a9-X6M"/>
+                    <connections>
+                        <outlet property="detalleQuesoTextView" destination="Opo-Nh-GOJ" id="qMj-Rn-SAz"/>
+                        <outlet property="imagenQuesoImageView" destination="hy6-e3-wem" id="vuS-Vl-FeB"/>
+                        <outlet property="seleccionQuesoPickerView" destination="1cS-uX-iW2" id="yK3-rb-tcH"/>
+                        <outlet property="tituloQuesoLabel" destination="9lU-5S-aCS" id="Kkr-Nq-GWT"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="L9p-Wl-oUw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -69,20 +121,50 @@
                     <view key="view" contentMode="scaleToFill" id="H6d-XN-RET">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Localidades de Madrid" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xux-0T-NQe">
+                                <rect key="frame" x="20" y="114" width="374" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Codigo postal de tu zona" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="j0x-2G-A3Z">
+                                <rect key="frame" x="20" y="188" width="374" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="prioridad de trabajo" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sqa-xX-ivA">
+                                <rect key="frame" x="20" y="259" width="374" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CkG-KI-dAX">
+                                <rect key="frame" x="20" y="342" width="374" height="197"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="B1d-ZL-In5"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="zOR-zu-bwP"/>
+                    <connections>
+                        <outlet property="codigoPostalZona" destination="j0x-2G-A3Z" id="aKQ-nu-ZNB"/>
+                        <outlet property="imagenPerfilImageView" destination="CkG-KI-dAX" id="yje-gg-gVv"/>
+                        <outlet property="localidadMadrid" destination="xux-0T-NQe" id="idd-ma-SLP"/>
+                        <outlet property="prioridadDeTrabajo" destination="sqa-xX-ivA" id="j5g-Qp-Yjm"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ahr-VB-5jz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1044.9275362318842" y="1420.9821428571429"/>
         </scene>
-        <!--Date-->
+        <!--DatePicker-->
         <scene sceneID="2T0-QB-TFV">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="QKj-jk-UFk" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Date" id="SMZ-z9-g2f"/>
+                    <tabBarItem key="tabBarItem" title="DatePicker" id="SMZ-z9-g2f"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="JyN-pV-GA1">
                         <rect key="frame" x="0.0" y="48" width="414" height="44"/>
@@ -97,11 +179,11 @@
             </objects>
             <point key="canvasLocation" x="136.23188405797103" y="3.3482142857142856"/>
         </scene>
-        <!--Item-->
+        <!--PickerView-->
         <scene sceneID="ge0-ie-2Eo">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="mbn-tD-0WI" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="CRl-qq-qbU"/>
+                    <tabBarItem key="tabBarItem" title="PickerView" id="CRl-qq-qbU"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="8Mk-Im-YeQ">
                         <rect key="frame" x="0.0" y="48" width="414" height="44"/>
@@ -156,8 +238,14 @@
         </scene>
     </scenes>
     <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
