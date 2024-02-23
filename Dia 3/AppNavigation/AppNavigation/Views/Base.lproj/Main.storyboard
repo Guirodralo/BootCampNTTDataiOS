@@ -27,10 +27,10 @@
             </objects>
             <point key="canvasLocation" x="137.68115942028987" y="4.6875"/>
         </scene>
-        <!--View Controller-->
+        <!--Segunda View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AppNavigation" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="SegundaViewController" customModule="AppNavigation" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -68,10 +68,10 @@
             </objects>
             <point key="canvasLocation" x="1047.8260869565217" y="4.6875"/>
         </scene>
-        <!--View Controller-->
+        <!--Tercera View Controller-->
         <scene sceneID="vCj-1w-jQZ">
             <objects>
-                <viewController id="zQC-OK-Yns" sceneMemberID="viewController">
+                <viewController id="zQC-OK-Yns" customClass="TerceraViewController" customModule="AppNavigation" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="oux-au-4iy">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -132,10 +132,10 @@
             </objects>
             <point key="canvasLocation" x="1928.985507246377" y="4.6875"/>
         </scene>
-        <!--View Controller-->
+        <!--Cuarta View Controller-->
         <scene sceneID="gxm-h4-bwG">
             <objects>
-                <viewController id="yre-3f-70i" sceneMemberID="viewController">
+                <viewController id="yre-3f-70i" customClass="CuartaViewController" customModule="AppNavigation" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="d3Z-mD-Aq3">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

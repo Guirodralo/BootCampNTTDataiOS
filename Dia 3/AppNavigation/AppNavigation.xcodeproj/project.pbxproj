@@ -13,6 +13,9 @@
 		3EB6D9952B877E160070200F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3EB6D9932B877E160070200F /* Main.storyboard */; };
 		3EB6D9972B877E180070200F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3EB6D9962B877E180070200F /* Assets.xcassets */; };
 		3EB6D99A2B877E180070200F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3EB6D9982B877E180070200F /* LaunchScreen.storyboard */; };
+		3EB6D9A62B888F750070200F /* SegundaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EB6D9A52B888F750070200F /* SegundaViewController.swift */; };
+		3EB6D9A82B888F7D0070200F /* TerceraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EB6D9A72B888F7D0070200F /* TerceraViewController.swift */; };
+		3EB6D9AA2B888F850070200F /* CuartaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EB6D9A92B888F850070200F /* CuartaViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		3EB6D9962B877E180070200F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3EB6D9992B877E180070200F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3EB6D99B2B877E180070200F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3EB6D9A52B888F750070200F /* SegundaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegundaViewController.swift; sourceTree = "<group>"; };
+		3EB6D9A72B888F7D0070200F /* TerceraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TerceraViewController.swift; sourceTree = "<group>"; };
+		3EB6D9A92B888F850070200F /* CuartaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CuartaViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +62,50 @@
 		3EB6D98C2B877E160070200F /* AppNavigation */ = {
 			isa = PBXGroup;
 			children = (
-				3EB6D98D2B877E160070200F /* AppDelegate.swift */,
-				3EB6D98F2B877E160070200F /* SceneDelegate.swift */,
-				3EB6D9912B877E160070200F /* ViewController.swift */,
-				3EB6D9932B877E160070200F /* Main.storyboard */,
+				3EB6D9A32B888F590070200F /* Modules */,
+				3EB6D9A22B888F490070200F /* Views */,
+				3EB6D9A12B888F380070200F /* CoreApp */,
 				3EB6D9962B877E180070200F /* Assets.xcassets */,
 				3EB6D9982B877E180070200F /* LaunchScreen.storyboard */,
 				3EB6D99B2B877E180070200F /* Info.plist */,
 			);
 			path = AppNavigation;
+			sourceTree = "<group>";
+		};
+		3EB6D9A12B888F380070200F /* CoreApp */ = {
+			isa = PBXGroup;
+			children = (
+				3EB6D98D2B877E160070200F /* AppDelegate.swift */,
+				3EB6D98F2B877E160070200F /* SceneDelegate.swift */,
+			);
+			path = CoreApp;
+			sourceTree = "<group>";
+		};
+		3EB6D9A22B888F490070200F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				3EB6D9932B877E160070200F /* Main.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		3EB6D9A32B888F590070200F /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				3EB6D9A42B888F5F0070200F /* Sections */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		3EB6D9A42B888F5F0070200F /* Sections */ = {
+			isa = PBXGroup;
+			children = (
+				3EB6D9912B877E160070200F /* ViewController.swift */,
+				3EB6D9A52B888F750070200F /* SegundaViewController.swift */,
+				3EB6D9A72B888F7D0070200F /* TerceraViewController.swift */,
+				3EB6D9A92B888F850070200F /* CuartaViewController.swift */,
+			);
+			path = Sections;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,6 +179,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3EB6D9A82B888F7D0070200F /* TerceraViewController.swift in Sources */,
+				3EB6D9A62B888F750070200F /* SegundaViewController.swift in Sources */,
+				3EB6D9AA2B888F850070200F /* CuartaViewController.swift in Sources */,
 				3EB6D9922B877E160070200F /* ViewController.swift in Sources */,
 				3EB6D98E2B877E160070200F /* AppDelegate.swift in Sources */,
 				3EB6D9902B877E160070200F /* SceneDelegate.swift in Sources */,
