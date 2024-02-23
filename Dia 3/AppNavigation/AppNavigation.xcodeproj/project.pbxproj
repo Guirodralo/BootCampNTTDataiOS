@@ -16,6 +16,7 @@
 		3EB6D9A62B888F750070200F /* SegundaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EB6D9A52B888F750070200F /* SegundaViewController.swift */; };
 		3EB6D9A82B888F7D0070200F /* TerceraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EB6D9A72B888F7D0070200F /* TerceraViewController.swift */; };
 		3EB6D9AA2B888F850070200F /* CuartaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EB6D9A92B888F850070200F /* CuartaViewController.swift */; };
+		3EB6D9AD2B8891440070200F /* Helpers+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EB6D9AC2B8891440070200F /* Helpers+Utils.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		3EB6D9A52B888F750070200F /* SegundaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegundaViewController.swift; sourceTree = "<group>"; };
 		3EB6D9A72B888F7D0070200F /* TerceraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TerceraViewController.swift; sourceTree = "<group>"; };
 		3EB6D9A92B888F850070200F /* CuartaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CuartaViewController.swift; sourceTree = "<group>"; };
+		3EB6D9AC2B8891440070200F /* Helpers+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Helpers+Utils.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 		3EB6D98C2B877E160070200F /* AppNavigation */ = {
 			isa = PBXGroup;
 			children = (
+				3EB6D9AB2B8891150070200F /* Helpers+Utils */,
 				3EB6D9A32B888F590070200F /* Modules */,
 				3EB6D9A22B888F490070200F /* Views */,
 				3EB6D9A12B888F380070200F /* CoreApp */,
@@ -106,6 +109,14 @@
 				3EB6D9A92B888F850070200F /* CuartaViewController.swift */,
 			);
 			path = Sections;
+			sourceTree = "<group>";
+		};
+		3EB6D9AB2B8891150070200F /* Helpers+Utils */ = {
+			isa = PBXGroup;
+			children = (
+				3EB6D9AC2B8891440070200F /* Helpers+Utils.swift */,
+			);
+			path = "Helpers+Utils";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -185,6 +196,7 @@
 				3EB6D9922B877E160070200F /* ViewController.swift in Sources */,
 				3EB6D98E2B877E160070200F /* AppDelegate.swift in Sources */,
 				3EB6D9902B877E160070200F /* SceneDelegate.swift in Sources */,
+				3EB6D9AD2B8891440070200F /* Helpers+Utils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

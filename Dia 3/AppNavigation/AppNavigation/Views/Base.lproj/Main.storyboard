@@ -27,10 +27,10 @@
             </objects>
             <point key="canvasLocation" x="137.68115942028987" y="4.6875"/>
         </scene>
-        <!--Segunda View Controller-->
+        <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="SegundaViewController" customModule="AppNavigation" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AppNavigation" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -55,7 +55,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="ir a ventana 2"/>
                                 <connections>
-                                    <segue destination="zQC-OK-Yns" kind="show" id="kEm-MG-ykr"/>
+                                    <segue destination="zQC-OK-Yns" kind="show" identifier="segueV2" id="kEm-MG-ykr"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -63,15 +63,19 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="KMq-GL-D9Q"/>
+                    <connections>
+                        <outlet property="apellidoTF" destination="9VQ-WE-hZz" id="wjM-6W-cOV"/>
+                        <outlet property="nombreTF" destination="9s6-nu-lhR" id="WyP-BG-3zs"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1047.8260869565217" y="4.6875"/>
         </scene>
-        <!--Tercera View Controller-->
+        <!--Segunda View Controller-->
         <scene sceneID="vCj-1w-jQZ">
             <objects>
-                <viewController id="zQC-OK-Yns" customClass="TerceraViewController" customModule="AppNavigation" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="zQC-OK-Yns" customClass="SegundaViewController" customModule="AppNavigation" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="oux-au-4iy">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -94,7 +98,7 @@
                                 <rect key="frame" x="20" y="226" width="374" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" keyboardType="phonePad"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Direccion" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="I1H-fZ-bxA">
                                 <rect key="frame" x="20" y="285" width="374" height="34"/>
@@ -109,13 +113,23 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hij-xh-4vb">
-                                <rect key="frame" x="20" y="431" width="374" height="35"/>
+                                <rect key="frame" x="20" y="454" width="374" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.53351541150000004" green="0.8441134978" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Calcula la edad de tu perro"/>
+                                <connections>
+                                    <action selector="calculoEdadPerroButton:" destination="zQC-OK-Yns" eventType="touchUpInside" id="e0D-cT-2OM"/>
+                                </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="La edad de mi perro" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1ET-H0-84M">
+                                <rect key="frame" x="20" y="408" width="374" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="ahD-Jb-QO4"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -123,19 +137,27 @@
                     <navigationItem key="navigationItem" id="Twc-ay-9gQ">
                         <barButtonItem key="rightBarButtonItem" title="ir a ventana 3" id="hqK-zm-NEc">
                             <connections>
-                                <segue destination="yre-3f-70i" kind="show" id="zr9-6X-xAD"/>
+                                <segue destination="yre-3f-70i" kind="show" identifier="V3" id="zr9-6X-xAD"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="apellidoLabel" destination="mzI-Vr-m1v" id="wPb-wd-UVb"/>
+                        <outlet property="direccionTextField" destination="I1H-fZ-bxA" id="MVT-Tf-f8U"/>
+                        <outlet property="edadPerroLabel" destination="1ET-H0-84M" id="ap9-Tq-Fno"/>
+                        <outlet property="edadPerroTextField" destination="5jn-qH-ppS" id="bZ0-jT-Hd1"/>
+                        <outlet property="movilTextField" destination="pfA-r3-GKc" id="Pno-eu-S1q"/>
+                        <outlet property="nombreLabel" destination="zht-pl-0QK" id="pMY-ZS-VcM"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="maU-8G-MUH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1928.985507246377" y="4.6875"/>
         </scene>
-        <!--Cuarta View Controller-->
+        <!--Tercera View Controller-->
         <scene sceneID="gxm-h4-bwG">
             <objects>
-                <viewController id="yre-3f-70i" customClass="CuartaViewController" customModule="AppNavigation" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="yre-3f-70i" customClass="TerceraViewController" customModule="AppNavigation" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="d3Z-mD-Aq3">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -160,13 +182,13 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Ciudad" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GGN-57-NgK">
+                            <textField opaque="NO" tag="1" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Ciudad" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GGN-57-NgK">
                                 <rect key="frame" x="20" y="420" width="374" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Posicion Geografica" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZMv-1P-844">
+                            <textField opaque="NO" tag="2" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Posicion Geografica" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZMv-1P-844">
                                 <rect key="frame" x="20" y="484" width="374" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -201,7 +223,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Ir a ventana 4"/>
                                 <connections>
-                                    <segue destination="2R8-JA-h51" kind="show" id="nFh-AV-WQl"/>
+                                    <segue destination="2R8-JA-h51" kind="show" identifier="V4" id="nFh-AV-WQl"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -209,15 +231,25 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="9uk-zJ-Krx"/>
+                    <connections>
+                        <outlet property="apellidoLabel" destination="fQk-gc-nvK" id="JBI-as-qE9"/>
+                        <outlet property="ciudadTextField" destination="GGN-57-NgK" id="yuY-Hp-4MR"/>
+                        <outlet property="codigoPostalTextField" destination="Zd8-oB-UqS" id="TeT-Kt-Tcs"/>
+                        <outlet property="direccionLabel" destination="WHF-Pl-oEF" id="IiQ-YM-lOv"/>
+                        <outlet property="edadPerroLabel" destination="YgD-UL-khR" id="gv8-5K-1rZ"/>
+                        <outlet property="movilLabel" destination="tcn-D4-ssu" id="rUM-Ar-yYo"/>
+                        <outlet property="nombreLabel" destination="E4o-Kd-cER" id="8rL-bN-y9e"/>
+                        <outlet property="posicionGeograficaTextField" destination="ZMv-1P-844" id="yrf-LD-XXY"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zk7-DD-u0k" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2758" y="5"/>
         </scene>
-        <!--View Controller-->
+        <!--Cuarta View Controller-->
         <scene sceneID="hlb-7Y-dtd">
             <objects>
-                <viewController id="2R8-JA-h51" sceneMemberID="viewController">
+                <viewController id="2R8-JA-h51" customClass="CuartaViewController" customModule="AppNavigation" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="JPJ-5N-IUv">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -237,7 +269,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2kf-d9-bxG">
-                                <rect key="frame" x="20" y="602" width="374" height="35"/>
+                                <rect key="frame" x="20" y="647" width="374" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.53351541150000004" green="0.8441134978" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -286,17 +318,48 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Fecha y Hora" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JEi-N6-r4S">
+                                <rect key="frame" x="20" y="578" width="374" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="showDatePickerWithMyTextField:" destination="2R8-JA-h51" eventType="editingDidBegin" id="xiG-rD-me0"/>
+                                </connections>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Solicitud tutoria" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ByY-tb-po5">
+                                <rect key="frame" x="20" y="523" width="374" height="39"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Rwo-Ia-SCE"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="apd-TQ-PGd">
-                        <barButtonItem key="rightBarButtonItem" title="Log Out" id="8nD-18-eQ5"/>
+                        <barButtonItem key="rightBarButtonItem" title="Log Out" id="8nD-18-eQ5">
+                            <connections>
+                                <action selector="popAllViews:" destination="2R8-JA-h51" id="NlE-Nq-NGY"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="apellidoLabel" destination="wbt-4a-HBg" id="ojl-bF-GCo"/>
+                        <outlet property="ciudadLabel" destination="Nwe-mr-NWk" id="hBr-hz-Lag"/>
+                        <outlet property="codigoPostalLabel" destination="cFH-Ck-Zd0" id="8Vo-wZ-EU6"/>
+                        <outlet property="direccionLabel" destination="h7H-0E-esU" id="5gt-kK-xgU"/>
+                        <outlet property="edadPerroLabel" destination="xQX-O4-m3m" id="kG2-Hr-efH"/>
+                        <outlet property="fechaTextField" destination="JEi-N6-r4S" id="Cqd-Qx-0bm"/>
+                        <outlet property="movilLabel" destination="UyU-1k-CFW" id="Nnq-Mz-dtr"/>
+                        <outlet property="nombreLabel" destination="TIs-6I-jEM" id="HCV-os-YqO"/>
+                        <outlet property="posicionGeograficaLabel" destination="o1Y-cf-Dge" id="NgX-Ig-z2I"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bqf-jU-mOV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3646" y="5"/>
+            <point key="canvasLocation" x="3644.9275362318845" y="4.6875"/>
         </scene>
     </scenes>
     <resources>
