@@ -41,13 +41,13 @@ class CuartaViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         showInfo()
     }
     
     
     private func showInfo() {
-         self.nombreLabel.text = variables.nombreData
+        self.nombreLabel.text = variables.nombreData
         self.apellidoLabel.text = variables.apellidoData
         self.movilLabel.text = variables.movilData
         self.direccionLabel.text = variables.direccionData
@@ -56,8 +56,8 @@ class CuartaViewController: UIViewController {
         self.ciudadLabel.text = variables.cuidadData
         self.posicionGeograficaLabel.text = variables.posicionGeograficaData
     }
-
-
+    
+    
     
     @IBAction func popAllViews(_ sender: Any) {
         self.navigationController?.popToRootViewController(animated: true)

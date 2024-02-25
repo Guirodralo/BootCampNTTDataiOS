@@ -94,7 +94,8 @@ class TerceraViewController: UIViewController {
                 vc4.variables.direccionData = self.variables.direccionData
                 vc4.variables.edadPerroData = self.variables.edadPerroData
                 vc4.variables.codigoPostalData = self.codigoPostalTextField.text
-                vc4.variables.codigoPostalData = self.codigoPostalTextField.text
+                vc4.variables.cuidadData = self.ciudadTextField.text
+                vc4.variables.posicionGeograficaData = self.posicionGeograficaTextField.text
                 
             } else {
                 present(displayAlertVC(myTitle: "Cuidado", myMessage: "rellena el CP, ciudad y posicion geografica"), animated: true, completion: nil)
