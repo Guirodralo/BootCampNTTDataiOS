@@ -40,6 +40,9 @@ extension ListaCochesPresenter: ListaCochesPresenterProtocol {
                             CochesModel(name: "Skoda", color: "Verde", image: UIImage(named: "audi")),
                             CochesModel(name: "audi", color: "Rojo", image: UIImage(named: "audi")),
                             CochesModel(name: "Renault", color: "Azul", image: UIImage(named: "audi")),
+                            CochesModel(name: "Skoda", color: "Verde", image: UIImage(named: "audi")),
+                            CochesModel(name: "audi", color: "Rojo", image: UIImage(named: "audi")),
+                            CochesModel(name: "Renault", color: "Azul", image: UIImage(named: "audi")),
                             CochesModel(name: "Skoda", color: "Verde", image: UIImage(named: "audi"))]
         self.vc?.reloadData()
     }

@@ -22,6 +22,7 @@ class ListaCochesViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        self.title = "Lista de Coches"
         self.presenter?.setArrayData()
         setupTableView()
         // Do any additional setup after loading the view.
