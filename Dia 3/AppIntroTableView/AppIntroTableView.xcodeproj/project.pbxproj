@@ -10,6 +10,15 @@
 		3EB6D9BB2B8C7F6D0070200F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EB6D9BA2B8C7F6D0070200F /* AppDelegate.swift */; };
 		3EB6D9C42B8C7F700070200F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3EB6D9C32B8C7F700070200F /* Assets.xcassets */; };
 		3EB6D9C72B8C7F700070200F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3EB6D9C52B8C7F700070200F /* LaunchScreen.storyboard */; };
+		3EB6D9D02B8C80930070200F /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EB6D9CF2B8C80930070200F /* AppCoordinator.swift */; };
+		3EB6D9D52B8C81E30070200F /* TableMonthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EB6D9D32B8C81E30070200F /* TableMonthViewController.swift */; };
+		3EB6D9D62B8C81E30070200F /* TableMonthViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3EB6D9D42B8C81E30070200F /* TableMonthViewController.xib */; };
+		3EB6D9D82B8C87310070200F /* TableMonthCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EB6D9D72B8C87310070200F /* TableMonthCoordinator.swift */; };
+		3EB6D9DD2B8C89480070200F /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EB6D9DB2B8C89480070200F /* DetailViewController.swift */; };
+		3EB6D9DE2B8C89480070200F /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3EB6D9DC2B8C89480070200F /* DetailViewController.xib */; };
+		3EB6D9E02B8C895E0070200F /* DetailCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EB6D9DF2B8C895E0070200F /* DetailCoordinator.swift */; };
+		3EB6D9E42B8C8E050070200F /* MonthsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EB6D9E22B8C8E050070200F /* MonthsTableViewCell.swift */; };
+		3EB6D9E52B8C8E050070200F /* MonthsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3EB6D9E32B8C8E050070200F /* MonthsTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -18,6 +27,15 @@
 		3EB6D9C32B8C7F700070200F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3EB6D9C62B8C7F700070200F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3EB6D9C82B8C7F700070200F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3EB6D9CF2B8C80930070200F /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		3EB6D9D32B8C81E30070200F /* TableMonthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableMonthViewController.swift; sourceTree = "<group>"; };
+		3EB6D9D42B8C81E30070200F /* TableMonthViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableMonthViewController.xib; sourceTree = "<group>"; };
+		3EB6D9D72B8C87310070200F /* TableMonthCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableMonthCoordinator.swift; sourceTree = "<group>"; };
+		3EB6D9DB2B8C89480070200F /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		3EB6D9DC2B8C89480070200F /* DetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailViewController.xib; sourceTree = "<group>"; };
+		3EB6D9DF2B8C895E0070200F /* DetailCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailCoordinator.swift; sourceTree = "<group>"; };
+		3EB6D9E22B8C8E050070200F /* MonthsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthsTableViewCell.swift; sourceTree = "<group>"; };
+		3EB6D9E32B8C8E050070200F /* MonthsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MonthsTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,12 +68,69 @@
 		3EB6D9B92B8C7F6D0070200F /* AppIntroTableView */ = {
 			isa = PBXGroup;
 			children = (
-				3EB6D9BA2B8C7F6D0070200F /* AppDelegate.swift */,
+				3EB6D9D12B8C818E0070200F /* Modules */,
+				3EB6D9CE2B8C80500070200F /* CoreApp */,
 				3EB6D9C32B8C7F700070200F /* Assets.xcassets */,
 				3EB6D9C52B8C7F700070200F /* LaunchScreen.storyboard */,
 				3EB6D9C82B8C7F700070200F /* Info.plist */,
 			);
 			path = AppIntroTableView;
+			sourceTree = "<group>";
+		};
+		3EB6D9CE2B8C80500070200F /* CoreApp */ = {
+			isa = PBXGroup;
+			children = (
+				3EB6D9BA2B8C7F6D0070200F /* AppDelegate.swift */,
+				3EB6D9CF2B8C80930070200F /* AppCoordinator.swift */,
+			);
+			path = CoreApp;
+			sourceTree = "<group>";
+		};
+		3EB6D9D12B8C818E0070200F /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				3EB6D9D22B8C819C0070200F /* Sections */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		3EB6D9D22B8C819C0070200F /* Sections */ = {
+			isa = PBXGroup;
+			children = (
+				3EB6D9DA2B8C89360070200F /* Detail */,
+				3EB6D9D92B8C892A0070200F /* Master */,
+			);
+			path = Sections;
+			sourceTree = "<group>";
+		};
+		3EB6D9D92B8C892A0070200F /* Master */ = {
+			isa = PBXGroup;
+			children = (
+				3EB6D9E12B8C8DD00070200F /* Cell */,
+				3EB6D9D32B8C81E30070200F /* TableMonthViewController.swift */,
+				3EB6D9D42B8C81E30070200F /* TableMonthViewController.xib */,
+				3EB6D9D72B8C87310070200F /* TableMonthCoordinator.swift */,
+			);
+			path = Master;
+			sourceTree = "<group>";
+		};
+		3EB6D9DA2B8C89360070200F /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				3EB6D9DB2B8C89480070200F /* DetailViewController.swift */,
+				3EB6D9DC2B8C89480070200F /* DetailViewController.xib */,
+				3EB6D9DF2B8C895E0070200F /* DetailCoordinator.swift */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		3EB6D9E12B8C8DD00070200F /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				3EB6D9E22B8C8E050070200F /* MonthsTableViewCell.swift */,
+				3EB6D9E32B8C8E050070200F /* MonthsTableViewCell.xib */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -116,8 +191,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3EB6D9E52B8C8E050070200F /* MonthsTableViewCell.xib in Resources */,
 				3EB6D9C72B8C7F700070200F /* LaunchScreen.storyboard in Resources */,
+				3EB6D9D62B8C81E30070200F /* TableMonthViewController.xib in Resources */,
 				3EB6D9C42B8C7F700070200F /* Assets.xcassets in Resources */,
+				3EB6D9DE2B8C89480070200F /* DetailViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -128,7 +206,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3EB6D9D82B8C87310070200F /* TableMonthCoordinator.swift in Sources */,
+				3EB6D9D02B8C80930070200F /* AppCoordinator.swift in Sources */,
+				3EB6D9DD2B8C89480070200F /* DetailViewController.swift in Sources */,
+				3EB6D9E02B8C895E0070200F /* DetailCoordinator.swift in Sources */,
 				3EB6D9BB2B8C7F6D0070200F /* AppDelegate.swift in Sources */,
+				3EB6D9D52B8C81E30070200F /* TableMonthViewController.swift in Sources */,
+				3EB6D9E42B8C8E050070200F /* MonthsTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -277,7 +361,8 @@
 				INFOPLIST_FILE = AppIntroTableView/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
+				INFOPLIST_KEY_UIStatusBarStyle = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -309,7 +394,8 @@
 				INFOPLIST_FILE = AppIntroTableView/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
+				INFOPLIST_KEY_UIStatusBarStyle = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
