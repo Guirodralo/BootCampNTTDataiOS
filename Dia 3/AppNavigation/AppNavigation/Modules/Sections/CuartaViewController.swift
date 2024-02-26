@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import MessageUI
 
 class CuartaViewController: UIViewController {
     //MARK: - Variables globales
@@ -23,12 +24,37 @@ class CuartaViewController: UIViewController {
     @IBOutlet weak var fechaTextField: UITextField!
     
     
+    // MARK: - IBACtions
     @IBAction func showDatePicker(myTextField: UITextField) {
         let datePicker = UIDatePicker()
         datePicker.datePickerMode = .dateAndTime
         myTextField.inputView = datePicker
         datePicker.addTarget(self, action: #selector(DatePickerValueChanged(_:)), for: .valueChanged)
     }
+    
+    @IBAction func enviarMail(_ sender: Any) {
+        
+        if MFMailComposeViewController.canSendMail() {
+            present(configuracionMailComposeVC(), animated: true, completion: nil)
+        }else {
+            present(displayAlertVC(myTitle: "Hey", myMessage: "no puedes mandar mails"), animated: true, completion: nil)
+        }
+        
+    }
+    
+    
+    private func configuracionMailComposeVC() -> MFMailComposeViewController {
+        
+        let mailComp = MFMailComposeViewController()
+        mailComp.mailComposeDelegate = self
+        mailComp.setToRecipients([""])
+        mailComp.setSubject("")
+        let emailBody = "Nombre: \(nombreLabel.text ?? "") \n Apellido: \(apellidoLabel.text ?? "") \n Telefono: \(movilLabel.text ?? "") \n Direccion: \(direccionLabel.text ?? "") \n Edad de mi perro: \(edadPerroLabel.text ?? "") \n Codigo postal: \(codigoPostalLabel.text ?? "") \n Ciudad: \(ciudadLabel.text ?? "") \n Posicion geofrafica: \(posicionGeograficaLabel.text ?? "") \n fecha Tutoria: \(fechaTextField.text ?? "")"
+        
+        mailComp.setMessageBody(emailBody, isHTML: false)
+        return mailComp
+    }
+    
     
     @objc
     func DatePickerValueChanged(_ myCustomDatePicker: UIDatePicker) {
@@ -61,6 +87,15 @@ class CuartaViewController: UIViewController {
     
     @IBAction func popAllViews(_ sender: Any) {
         self.navigationController?.popToRootViewController(animated: true)
+    }
+    
+}
+
+
+extension CuartaViewController: MFMailComposeViewControllerDelegate {
+    
+    func mailComposeController(_ controller: MFMailComposeViewController, didFinishWith result: MFMailComposeResult, error: Error?) {
+        controller.dismiss(animated: true, completion: nil)
     }
     
 }
