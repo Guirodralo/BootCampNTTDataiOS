@@ -110,13 +110,6 @@ class UserDefaultViewController: UIViewController {
         showPickerPhoto()
     }
     
-    
-}
-
-
-
-extension UserDefaultViewController: UIImagePickerControllerDelegate, UINavigationControllerDelegate {
-    
     func showPickerPhoto() {
         if UIImagePickerController.isSourceTypeAvailable(.camera) {
             showPhotoMenu()
@@ -153,6 +146,12 @@ extension UserDefaultViewController: UIImagePickerControllerDelegate, UINavigati
         imagePicker.allowsEditing = true
         present(imagePicker, animated: true, completion: nil)
     }
+    
+}
+
+
+
+extension UserDefaultViewController: UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
         if let pickerImage = info[.originalImage] as? UIImage {
