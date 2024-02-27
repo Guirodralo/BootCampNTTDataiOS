@@ -32,6 +32,7 @@ class PerfilViewController: UIViewController {
         self.myTableViewPerfil.delegate = self
         self.myTableViewPerfil.dataSource = self
         self.myTableViewPerfil.register(UINib(nibName: "PerfilTableViewCell", bundle: nil), forCellReuseIdentifier: "PerfilTableViewCell")
+        self.myTableViewPerfil.register(UINib(nibName: "PostTableViewCell", bundle: nil), forCellReuseIdentifier: "PostTableViewCell")
     }
     
 }
@@ -67,7 +68,11 @@ extension PerfilViewController: UITableViewDelegate, UITableViewDataSource {
             }
             return cellPerfil
         default:
-            return UITableViewCell()
+            let cellPost = myTableViewPerfil.dequeueReusableCell(withIdentifier: "PostTableViewCell", for: indexPath) as! PostTableViewCell
+            if let modelData = self.presenter?.getInformationForRowCell(indexPath: indexPath.row) {
+                cellPost.configCell(model: modelData)
+            }
+            return cellPost
         }
     }
     

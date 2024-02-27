@@ -61,11 +61,11 @@ extension PerfilPresenter: PerfilPresenterProtocol {
                                                        lugarVivo: "Nueva York",
                                                        numeroSeguidores: 300),
                                    tituloPosteo: "Loren ipsum es lo mejor para imprimir texto falso",
-                                   mensjaePosteo: "Loren ipsum es lo mejor para imprimir texto falso,\n Loren ipsum es lo mejor para imprimir texto falso, \n Loren ipsum es lo mejor para imprimir texto falso",
+                                   mensajePosteo: "Loren ipsum es lo mejor para imprimir texto falso,\n Loren ipsum es lo mejor para imprimir texto falso, \n Loren ipsum es lo mejor para imprimir texto falso",
                                    fuentePosteo: "El Pais.com",
                                    numeroLikes: 100,
                                    numeroComentarios: 25,
-                                   horaPublicacion: Date())]
+                                    horaPublicacion: Date(), imagenPost: UIImage(named: "Miranda_Lambert"))]
     }
     
     func getDataCellForRowPost() -> Int {

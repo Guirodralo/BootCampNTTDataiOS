@@ -54,6 +54,6 @@ extension PerfilTableViewCell: PerfilTableViewCellProtocol {
         self.myNombreLabel.text = model.nombre
         self.myPuestoTrabajoLabel.text = model.puestoTrabajo
         self.myLugarDondeVivoLabel.text = model.lugarVivo
-        self.myNumeroSeguidoresLabel.text = String(model.numeroSeguidores ?? 0)
+        self.myNumeroSeguidoresLabel.text = "Seguidores \(model.numeroSeguidores ?? 0)"
     }
 }

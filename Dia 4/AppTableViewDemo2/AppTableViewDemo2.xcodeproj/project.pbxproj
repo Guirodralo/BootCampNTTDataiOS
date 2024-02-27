@@ -19,6 +19,8 @@
 		3E8BCA222B8CEFD1004A36CF /* PerfilTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E8BCA202B8CEFD1004A36CF /* PerfilTableViewCell.swift */; };
 		3E8BCA232B8CEFD1004A36CF /* PerfilTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3E8BCA212B8CEFD1004A36CF /* PerfilTableViewCell.xib */; };
 		3E8BCA252B8DD2C9004A36CF /* PerfilModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E8BCA242B8DD2C9004A36CF /* PerfilModel.swift */; };
+		3E8BCA282B8DE0F2004A36CF /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E8BCA262B8DE0F2004A36CF /* PostTableViewCell.swift */; };
+		3E8BCA292B8DE0F2004A36CF /* PostTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3E8BCA272B8DE0F2004A36CF /* PostTableViewCell.xib */; };
 		3EB6DA302B8CADC30070200F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EB6DA2F2B8CADC30070200F /* AppDelegate.swift */; };
 		3EB6DA392B8CADC50070200F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3EB6DA382B8CADC50070200F /* Assets.xcassets */; };
 		3EB6DA3C2B8CADC50070200F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3EB6DA3A2B8CADC50070200F /* LaunchScreen.storyboard */; };
@@ -43,6 +45,8 @@
 		3E8BCA202B8CEFD1004A36CF /* PerfilTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerfilTableViewCell.swift; sourceTree = "<group>"; };
 		3E8BCA212B8CEFD1004A36CF /* PerfilTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PerfilTableViewCell.xib; sourceTree = "<group>"; };
 		3E8BCA242B8DD2C9004A36CF /* PerfilModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerfilModel.swift; sourceTree = "<group>"; };
+		3E8BCA262B8DE0F2004A36CF /* PostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTableViewCell.swift; sourceTree = "<group>"; };
+		3E8BCA272B8DE0F2004A36CF /* PostTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostTableViewCell.xib; sourceTree = "<group>"; };
 		3EB6DA2C2B8CADC30070200F /* AppTableViewDemo2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppTableViewDemo2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3EB6DA2F2B8CADC30070200F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3EB6DA382B8CADC50070200F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -115,6 +119,8 @@
 			children = (
 				3E8BCA202B8CEFD1004A36CF /* PerfilTableViewCell.swift */,
 				3E8BCA212B8CEFD1004A36CF /* PerfilTableViewCell.xib */,
+				3E8BCA262B8DE0F2004A36CF /* PostTableViewCell.swift */,
+				3E8BCA272B8DE0F2004A36CF /* PostTableViewCell.xib */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -249,6 +255,7 @@
 				3EB6DA4D2B8CB69C0070200F /* ListaCochesViewController.xib in Resources */,
 				3EB6DA392B8CADC50070200F /* Assets.xcassets in Resources */,
 				3E8BCA182B8CDB8A004A36CF /* HomeViewController.xib in Resources */,
+				3E8BCA292B8DE0F2004A36CF /* PostTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,6 +268,7 @@
 			files = (
 				3EB6DA542B8CBAB10070200F /* CochesModel.swift in Sources */,
 				3EB6DA512B8CB8CD0070200F /* ListaCochesPresenter.swift in Sources */,
+				3E8BCA282B8DE0F2004A36CF /* PostTableViewCell.swift in Sources */,
 				3EB6DA472B8CB6470070200F /* AppCoordinator.swift in Sources */,
 				3EB6DA4F2B8CB6F00070200F /* ListaCochesCoordinator.swift in Sources */,
 				3E8BCA0A2B8CC6D4004A36CF /* CochesTableViewCell.swift in Sources */,

@@ -21,9 +21,10 @@ struct PerfilModel {
 struct PostModel {
     var perfil: PerfilModel?
     var tituloPosteo: String?
-    var mensjaePosteo: String?
+    var mensajePosteo: String?
     var fuentePosteo: String?
     var numeroLikes: Int?
     var numeroComentarios: Int?
     var horaPublicacion: Date?
+    var imagenPost: UIImage?
 }
