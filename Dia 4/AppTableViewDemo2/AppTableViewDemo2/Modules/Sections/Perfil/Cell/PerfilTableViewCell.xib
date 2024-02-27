@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
-    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -16,14 +17,112 @@
                 <rect key="frame" x="0.0" y="0.0" width="320" height="215"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4If-zR-lmF">
-                        <rect key="frame" x="130" y="8" width="60" height="60"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fzb-Kr-s52">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="74"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="-XX2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hox-qP-VNg">
+                                <rect key="frame" x="198" y="41" width="106" height="25"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.53351541150000004" green="0.8441134978" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Light" family="Chalkboard SE" pointSize="11"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4If-zR-lmF">
+                                <rect key="frame" x="130" y="7" width="60" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemYellowColor"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="74" id="tLU-kt-2Wd"/>
+                        </constraints>
+                    </view>
+                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="3cC-dT-jh6">
+                        <rect key="frame" x="16" y="170" width="288" height="37"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E9m-Ub-Gc7">
+                                <rect key="frame" x="0.0" y="0.0" width="144.5" height="37"/>
+                                <color key="backgroundColor" red="1" green="0.5393844419811169" blue="0.82327199537046958" alpha="0.84705882352941175" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Enviar mail"/>
+                                <connections>
+                                    <action selector="enviaMail:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="Kxo-rC-9VI"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kij-un-djs">
+                                <rect key="frame" x="149.5" y="0.0" width="138.5" height="37"/>
+                                <color key="backgroundColor" red="1" green="0.53938444200000002" blue="0.82327199539999996" alpha="0.84705882349999995" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Compartir"/>
+                                <connections>
+                                    <action selector="compartirInfo:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="B4R-ZJ-6OX"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                    </stackView>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="L8P-5h-GOn">
+                        <rect key="frame" x="16" y="79" width="288" height="86"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="_nombre" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p12-1O-DIP">
+                                <rect key="frame" x="0.0" y="0.0" width="288" height="18.5"/>
+                                <color key="backgroundColor" red="0.53351541150000004" green="0.8441134978" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Light" family="Chalkboard SE" pointSize="13"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="_Puesto de trabajo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="njV-9f-tFW">
+                                <rect key="frame" x="0.0" y="22.5" width="288" height="18.5"/>
+                                <color key="backgroundColor" red="0.53351541150000004" green="0.8441134978" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Light" family="Chalkboard SE" pointSize="13"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="_Lugar donde vivo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cTu-07-KT3">
+                                <rect key="frame" x="0.0" y="45" width="288" height="18.5"/>
+                                <color key="backgroundColor" red="0.53351541150000004" green="0.8441134978" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Light" family="Chalkboard SE" pointSize="13"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="_Numero de seguidores" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QZ2-4V-WuU">
+                                <rect key="frame" x="0.0" y="67.5" width="288" height="18.5"/>
+                                <color key="backgroundColor" red="0.53351541150000004" green="0.8441134978" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Light" family="Chalkboard SE" pointSize="13"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </stackView>
                 </subviews>
+                <constraints>
+                    <constraint firstItem="3cC-dT-jh6" firstAttribute="top" secondItem="L8P-5h-GOn" secondAttribute="bottom" constant="5" id="1vg-18-bcA"/>
+                    <constraint firstItem="Fzb-Kr-s52" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="8Pa-yE-qXc"/>
+                    <constraint firstAttribute="bottom" secondItem="3cC-dT-jh6" secondAttribute="bottom" constant="8" id="Chz-7n-xZw"/>
+                    <constraint firstItem="3cC-dT-jh6" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="L22-45-uHh"/>
+                    <constraint firstItem="L8P-5h-GOn" firstAttribute="top" secondItem="Fzb-Kr-s52" secondAttribute="bottom" constant="5" id="OIb-O4-TTF"/>
+                    <constraint firstItem="Fzb-Kr-s52" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="XvS-e3-TJu"/>
+                    <constraint firstAttribute="trailing" secondItem="3cC-dT-jh6" secondAttribute="trailing" constant="16" id="aTx-uf-ghu"/>
+                    <constraint firstAttribute="trailing" secondItem="L8P-5h-GOn" secondAttribute="trailing" constant="16" id="oft-FL-8Ji"/>
+                    <constraint firstItem="L8P-5h-GOn" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="skG-JT-Bmn"/>
+                    <constraint firstAttribute="trailing" secondItem="Fzb-Kr-s52" secondAttribute="trailing" id="yPq-gb-nvJ"/>
+                </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
-            <point key="canvasLocation" x="138.93129770992365" y="80.633802816901408"/>
+            <connections>
+                <outlet property="myImageViewPerfil" destination="4If-zR-lmF" id="wJE-hB-fVq"/>
+                <outlet property="myLugarDondeVivoLabel" destination="cTu-07-KT3" id="BQR-5s-evo"/>
+                <outlet property="myNombreLabel" destination="p12-1O-DIP" id="vGX-Ic-cEF"/>
+                <outlet property="myNumeroSeguidoresLabel" destination="QZ2-4V-WuU" id="CbO-8u-qql"/>
+                <outlet property="myPuestoTrabajoLabel" destination="njV-9f-tFW" id="eEF-kS-MNn"/>
+                <outlet property="myUsuarioTwitterLabel" destination="hox-qP-VNg" id="eVd-vt-dw1"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="81.361607142857139"/>
         </tableViewCell>
     </objects>
+    <resources>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
 </document>
