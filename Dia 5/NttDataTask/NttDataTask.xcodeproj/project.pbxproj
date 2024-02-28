@@ -8,22 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		3E8BCA622B8E3F76004A36CF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E8BCA612B8E3F76004A36CF /* AppDelegate.swift */; };
-		3E8BCA642B8E3F76004A36CF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E8BCA632B8E3F76004A36CF /* SceneDelegate.swift */; };
-		3E8BCA662B8E3F76004A36CF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E8BCA652B8E3F76004A36CF /* ViewController.swift */; };
-		3E8BCA692B8E3F76004A36CF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3E8BCA672B8E3F76004A36CF /* Main.storyboard */; };
 		3E8BCA6B2B8E3F79004A36CF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3E8BCA6A2B8E3F79004A36CF /* Assets.xcassets */; };
 		3E8BCA6E2B8E3F79004A36CF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3E8BCA6C2B8E3F79004A36CF /* LaunchScreen.storyboard */; };
+		3E8BCA772B8E4018004A36CF /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E8BCA762B8E4018004A36CF /* AppCoordinator.swift */; };
+		3E8BCA802B8E40CC004A36CF /* TabBarHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E8BCA7E2B8E40CC004A36CF /* TabBarHomeViewController.swift */; };
+		3E8BCA812B8E40CC004A36CF /* TabBarHomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3E8BCA7F2B8E40CC004A36CF /* TabBarHomeViewController.xib */; };
+		3E8BCA832B8E40D9004A36CF /* TabBarHomeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E8BCA822B8E40D9004A36CF /* TabBarHomeCoordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		3E8BCA5E2B8E3F76004A36CF /* NttDataTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NttDataTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E8BCA612B8E3F76004A36CF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		3E8BCA632B8E3F76004A36CF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		3E8BCA652B8E3F76004A36CF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		3E8BCA682B8E3F76004A36CF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3E8BCA6A2B8E3F79004A36CF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3E8BCA6D2B8E3F79004A36CF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3E8BCA6F2B8E3F79004A36CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3E8BCA762B8E4018004A36CF /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		3E8BCA7E2B8E40CC004A36CF /* TabBarHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarHomeViewController.swift; sourceTree = "<group>"; };
+		3E8BCA7F2B8E40CC004A36CF /* TabBarHomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TabBarHomeViewController.xib; sourceTree = "<group>"; };
+		3E8BCA822B8E40D9004A36CF /* TabBarHomeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarHomeCoordinator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +58,72 @@
 		3E8BCA602B8E3F76004A36CF /* NttDataTask */ = {
 			isa = PBXGroup;
 			children = (
-				3E8BCA612B8E3F76004A36CF /* AppDelegate.swift */,
-				3E8BCA632B8E3F76004A36CF /* SceneDelegate.swift */,
-				3E8BCA652B8E3F76004A36CF /* ViewController.swift */,
-				3E8BCA672B8E3F76004A36CF /* Main.storyboard */,
+				3E8BCA782B8E404C004A36CF /* Modules */,
+				3E8BCA752B8E4002004A36CF /* CoreApp */,
 				3E8BCA6A2B8E3F79004A36CF /* Assets.xcassets */,
 				3E8BCA6C2B8E3F79004A36CF /* LaunchScreen.storyboard */,
 				3E8BCA6F2B8E3F79004A36CF /* Info.plist */,
 			);
 			path = NttDataTask;
+			sourceTree = "<group>";
+		};
+		3E8BCA752B8E4002004A36CF /* CoreApp */ = {
+			isa = PBXGroup;
+			children = (
+				3E8BCA612B8E3F76004A36CF /* AppDelegate.swift */,
+				3E8BCA762B8E4018004A36CF /* AppCoordinator.swift */,
+			);
+			path = CoreApp;
+			sourceTree = "<group>";
+		};
+		3E8BCA782B8E404C004A36CF /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				3E8BCA792B8E4067004A36CF /* Sections */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		3E8BCA792B8E4067004A36CF /* Sections */ = {
+			isa = PBXGroup;
+			children = (
+				3E8BCA7D2B8E40A5004A36CF /* NuevaTarea */,
+				3E8BCA7C2B8E409D004A36CF /* ListaTareas */,
+				3E8BCA7B2B8E407F004A36CF /* Contactos */,
+				3E8BCA7A2B8E406F004A36CF /* TabBarHome */,
+			);
+			path = Sections;
+			sourceTree = "<group>";
+		};
+		3E8BCA7A2B8E406F004A36CF /* TabBarHome */ = {
+			isa = PBXGroup;
+			children = (
+				3E8BCA7E2B8E40CC004A36CF /* TabBarHomeViewController.swift */,
+				3E8BCA822B8E40D9004A36CF /* TabBarHomeCoordinator.swift */,
+				3E8BCA7F2B8E40CC004A36CF /* TabBarHomeViewController.xib */,
+			);
+			path = TabBarHome;
+			sourceTree = "<group>";
+		};
+		3E8BCA7B2B8E407F004A36CF /* Contactos */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Contactos;
+			sourceTree = "<group>";
+		};
+		3E8BCA7C2B8E409D004A36CF /* ListaTareas */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ListaTareas;
+			sourceTree = "<group>";
+		};
+		3E8BCA7D2B8E40A5004A36CF /* NuevaTarea */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = NuevaTarea;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,8 +185,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				3E8BCA6E2B8E3F79004A36CF /* LaunchScreen.storyboard in Resources */,
+				3E8BCA812B8E40CC004A36CF /* TabBarHomeViewController.xib in Resources */,
 				3E8BCA6B2B8E3F79004A36CF /* Assets.xcassets in Resources */,
-				3E8BCA692B8E3F76004A36CF /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,23 +197,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3E8BCA662B8E3F76004A36CF /* ViewController.swift in Sources */,
+				3E8BCA772B8E4018004A36CF /* AppCoordinator.swift in Sources */,
 				3E8BCA622B8E3F76004A36CF /* AppDelegate.swift in Sources */,
-				3E8BCA642B8E3F76004A36CF /* SceneDelegate.swift in Sources */,
+				3E8BCA802B8E40CC004A36CF /* TabBarHomeViewController.swift in Sources */,
+				3E8BCA832B8E40D9004A36CF /* TabBarHomeCoordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		3E8BCA672B8E3F76004A36CF /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				3E8BCA682B8E3F76004A36CF /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		3E8BCA6C2B8E3F79004A36CF /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -297,7 +349,7 @@
 				INFOPLIST_FILE = NttDataTask/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -329,7 +381,7 @@
 				INFOPLIST_FILE = NttDataTask/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
