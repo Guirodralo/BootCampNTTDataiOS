@@ -1,0 +1,480 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3E8BCA942B8F222F004A36CF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E8BCA932B8F222F004A36CF /* AppDelegate.swift */; };
+		3E8BCA9D2B8F2231004A36CF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3E8BCA9C2B8F2231004A36CF /* Assets.xcassets */; };
+		3E8BCAA02B8F2231004A36CF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3E8BCA9E2B8F2231004A36CF /* LaunchScreen.storyboard */; };
+		3E8BCAA92B8F226A004A36CF /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E8BCAA82B8F226A004A36CF /* AppCoordinator.swift */; };
+		3E8BCAB22B8F2333004A36CF /* TabBarHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E8BCAB02B8F2333004A36CF /* TabBarHomeViewController.swift */; };
+		3E8BCAB32B8F2333004A36CF /* TabBarHomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3E8BCAB12B8F2333004A36CF /* TabBarHomeViewController.xib */; };
+		3E8BCAB52B8F2353004A36CF /* TabBarHomeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E8BCAB42B8F2353004A36CF /* TabBarHomeCoordinator.swift */; };
+		3E8BCAB82B8F248A004A36CF /* contacts.json in Resources */ = {isa = PBXBuildFile; fileRef = 3E8BCAB72B8F248A004A36CF /* contacts.json */; };
+		3E8BCABB2B8F26DE004A36CF /* ContactModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E8BCABA2B8F26DE004A36CF /* ContactModel.swift */; };
+		3E8BCABE2B8F2BB8004A36CF /* ListaContactosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E8BCABC2B8F2BB8004A36CF /* ListaContactosViewController.swift */; };
+		3E8BCABF2B8F2BB8004A36CF /* ListaContactosViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3E8BCABD2B8F2BB8004A36CF /* ListaContactosViewController.xib */; };
+		3E8BCAC12B8F2BCD004A36CF /* ListaContactosCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E8BCAC02B8F2BCD004A36CF /* ListaContactosCoordinator.swift */; };
+		3E8BCAC52B8F3005004A36CF /* ContactosCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E8BCAC32B8F3005004A36CF /* ContactosCell.swift */; };
+		3E8BCAC62B8F3005004A36CF /* ContactosCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3E8BCAC42B8F3005004A36CF /* ContactosCell.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3E8BCA902B8F222F004A36CF /* NTTDataTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NTTDataTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3E8BCA932B8F222F004A36CF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3E8BCA9C2B8F2231004A36CF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3E8BCA9F2B8F2231004A36CF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3E8BCAA12B8F2231004A36CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3E8BCAA82B8F226A004A36CF /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		3E8BCAB02B8F2333004A36CF /* TabBarHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarHomeViewController.swift; sourceTree = "<group>"; };
+		3E8BCAB12B8F2333004A36CF /* TabBarHomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TabBarHomeViewController.xib; sourceTree = "<group>"; };
+		3E8BCAB42B8F2353004A36CF /* TabBarHomeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarHomeCoordinator.swift; sourceTree = "<group>"; };
+		3E8BCAB72B8F248A004A36CF /* contacts.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = contacts.json; sourceTree = "<group>"; };
+		3E8BCABA2B8F26DE004A36CF /* ContactModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactModel.swift; sourceTree = "<group>"; };
+		3E8BCABC2B8F2BB8004A36CF /* ListaContactosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListaContactosViewController.swift; sourceTree = "<group>"; };
+		3E8BCABD2B8F2BB8004A36CF /* ListaContactosViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListaContactosViewController.xib; sourceTree = "<group>"; };
+		3E8BCAC02B8F2BCD004A36CF /* ListaContactosCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListaContactosCoordinator.swift; sourceTree = "<group>"; };
+		3E8BCAC32B8F3005004A36CF /* ContactosCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactosCell.swift; sourceTree = "<group>"; };
+		3E8BCAC42B8F3005004A36CF /* ContactosCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ContactosCell.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3E8BCA8D2B8F222F004A36CF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3E8BCA872B8F222F004A36CF = {
+			isa = PBXGroup;
+			children = (
+				3E8BCA922B8F222F004A36CF /* NTTDataTask */,
+				3E8BCA912B8F222F004A36CF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3E8BCA912B8F222F004A36CF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3E8BCA902B8F222F004A36CF /* NTTDataTask.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3E8BCA922B8F222F004A36CF /* NTTDataTask */ = {
+			isa = PBXGroup;
+			children = (
+				3E8BCAB92B8F26D4004A36CF /* Models */,
+				3E8BCAB62B8F2477004A36CF /* StubJson */,
+				3E8BCAAA2B8F22DB004A36CF /* Modules */,
+				3E8BCAA72B8F2250004A36CF /* CoreApp */,
+				3E8BCA9C2B8F2231004A36CF /* Assets.xcassets */,
+				3E8BCA9E2B8F2231004A36CF /* LaunchScreen.storyboard */,
+				3E8BCAA12B8F2231004A36CF /* Info.plist */,
+			);
+			path = NTTDataTask;
+			sourceTree = "<group>";
+		};
+		3E8BCAA72B8F2250004A36CF /* CoreApp */ = {
+			isa = PBXGroup;
+			children = (
+				3E8BCA932B8F222F004A36CF /* AppDelegate.swift */,
+				3E8BCAA82B8F226A004A36CF /* AppCoordinator.swift */,
+			);
+			path = CoreApp;
+			sourceTree = "<group>";
+		};
+		3E8BCAAA2B8F22DB004A36CF /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				3E8BCAAB2B8F22E0004A36CF /* Sections */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		3E8BCAAB2B8F22E0004A36CF /* Sections */ = {
+			isa = PBXGroup;
+			children = (
+				3E8BCAAF2B8F2300004A36CF /* TabBarHome */,
+				3E8BCAAE2B8F22F9004A36CF /* Contactos */,
+				3E8BCAAD2B8F22EA004A36CF /* ListaTareas */,
+				3E8BCAAC2B8F22E6004A36CF /* NuevaTarea */,
+			);
+			path = Sections;
+			sourceTree = "<group>";
+		};
+		3E8BCAAC2B8F22E6004A36CF /* NuevaTarea */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = NuevaTarea;
+			sourceTree = "<group>";
+		};
+		3E8BCAAD2B8F22EA004A36CF /* ListaTareas */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ListaTareas;
+			sourceTree = "<group>";
+		};
+		3E8BCAAE2B8F22F9004A36CF /* Contactos */ = {
+			isa = PBXGroup;
+			children = (
+				3E8BCAC22B8F2FE9004A36CF /* Cell */,
+				3E8BCABC2B8F2BB8004A36CF /* ListaContactosViewController.swift */,
+				3E8BCABD2B8F2BB8004A36CF /* ListaContactosViewController.xib */,
+				3E8BCAC02B8F2BCD004A36CF /* ListaContactosCoordinator.swift */,
+			);
+			path = Contactos;
+			sourceTree = "<group>";
+		};
+		3E8BCAAF2B8F2300004A36CF /* TabBarHome */ = {
+			isa = PBXGroup;
+			children = (
+				3E8BCAB02B8F2333004A36CF /* TabBarHomeViewController.swift */,
+				3E8BCAB12B8F2333004A36CF /* TabBarHomeViewController.xib */,
+				3E8BCAB42B8F2353004A36CF /* TabBarHomeCoordinator.swift */,
+			);
+			path = TabBarHome;
+			sourceTree = "<group>";
+		};
+		3E8BCAB62B8F2477004A36CF /* StubJson */ = {
+			isa = PBXGroup;
+			children = (
+				3E8BCAB72B8F248A004A36CF /* contacts.json */,
+			);
+			path = StubJson;
+			sourceTree = "<group>";
+		};
+		3E8BCAB92B8F26D4004A36CF /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				3E8BCABA2B8F26DE004A36CF /* ContactModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		3E8BCAC22B8F2FE9004A36CF /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				3E8BCAC32B8F3005004A36CF /* ContactosCell.swift */,
+				3E8BCAC42B8F3005004A36CF /* ContactosCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3E8BCA8F2B8F222F004A36CF /* NTTDataTask */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3E8BCAA42B8F2231004A36CF /* Build configuration list for PBXNativeTarget "NTTDataTask" */;
+			buildPhases = (
+				3E8BCA8C2B8F222F004A36CF /* Sources */,
+				3E8BCA8D2B8F222F004A36CF /* Frameworks */,
+				3E8BCA8E2B8F222F004A36CF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NTTDataTask;
+			productName = NTTDataTask;
+			productReference = 3E8BCA902B8F222F004A36CF /* NTTDataTask.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3E8BCA882B8F222F004A36CF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1520;
+				LastUpgradeCheck = 1520;
+				TargetAttributes = {
+					3E8BCA8F2B8F222F004A36CF = {
+						CreatedOnToolsVersion = 15.2;
+					};
+				};
+			};
+			buildConfigurationList = 3E8BCA8B2B8F222F004A36CF /* Build configuration list for PBXProject "NTTDataTask" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3E8BCA872B8F222F004A36CF;
+			productRefGroup = 3E8BCA912B8F222F004A36CF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3E8BCA8F2B8F222F004A36CF /* NTTDataTask */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3E8BCA8E2B8F222F004A36CF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3E8BCAB82B8F248A004A36CF /* contacts.json in Resources */,
+				3E8BCABF2B8F2BB8004A36CF /* ListaContactosViewController.xib in Resources */,
+				3E8BCAC62B8F3005004A36CF /* ContactosCell.xib in Resources */,
+				3E8BCAA02B8F2231004A36CF /* LaunchScreen.storyboard in Resources */,
+				3E8BCAB32B8F2333004A36CF /* TabBarHomeViewController.xib in Resources */,
+				3E8BCA9D2B8F2231004A36CF /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3E8BCA8C2B8F222F004A36CF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3E8BCAC12B8F2BCD004A36CF /* ListaContactosCoordinator.swift in Sources */,
+				3E8BCAA92B8F226A004A36CF /* AppCoordinator.swift in Sources */,
+				3E8BCABE2B8F2BB8004A36CF /* ListaContactosViewController.swift in Sources */,
+				3E8BCA942B8F222F004A36CF /* AppDelegate.swift in Sources */,
+				3E8BCAC52B8F3005004A36CF /* ContactosCell.swift in Sources */,
+				3E8BCAB22B8F2333004A36CF /* TabBarHomeViewController.swift in Sources */,
+				3E8BCABB2B8F26DE004A36CF /* ContactModel.swift in Sources */,
+				3E8BCAB52B8F2353004A36CF /* TabBarHomeCoordinator.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		3E8BCA9E2B8F2231004A36CF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3E8BCA9F2B8F2231004A36CF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3E8BCAA22B8F2231004A36CF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3E8BCAA32B8F2231004A36CF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3E8BCAA52B8F2231004A36CF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9HK9MP7WRQ;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = NTTDataTask/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.formacioniOS.NTTDataTask;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		3E8BCAA62B8F2231004A36CF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9HK9MP7WRQ;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = NTTDataTask/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.formacioniOS.NTTDataTask;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3E8BCA8B2B8F222F004A36CF /* Build configuration list for PBXProject "NTTDataTask" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3E8BCAA22B8F2231004A36CF /* Debug */,
+				3E8BCAA32B8F2231004A36CF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3E8BCAA42B8F2231004A36CF /* Build configuration list for PBXNativeTarget "NTTDataTask" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3E8BCAA52B8F2231004A36CF /* Debug */,
+				3E8BCAA62B8F2231004A36CF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3E8BCA882B8F222F004A36CF /* Project object */;
+}
