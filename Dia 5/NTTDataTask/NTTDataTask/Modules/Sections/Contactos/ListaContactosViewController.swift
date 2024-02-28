@@ -7,28 +7,27 @@
 
 import UIKit
 
+protocol ListaContactosViewControllerProtocol {
+    func reloadDataInView()
+}
+
+
 class ListaContactosViewController: UIViewController {
+    //MARK: - ID
+    var presenter: ListaContactosPresenterProtocol?
+    
+    
     //MARK: - IBOutlets
     @IBOutlet weak var listaContactosTableView: UITableView!
     
     
     
-    //MARK: - Variables
-    var arrayContactos: [ArrayContact] = []
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        if let model = ContactosModel.stubbedContacts
-        {
-            self.arrayContactos = model
-        }
+        self.presenter?.viewDidLoadInPresent()
         self.setupTableView()
         // Do any additional setup after loading the view.
-    }
-    
-    override func viewWillAppear(_ animated: Bool) {
-        self.listaContactosTableView.reloadData()
     }
     
     private func setupTableView() {
@@ -40,20 +39,41 @@ class ListaContactosViewController: UIViewController {
 }
 
 
+//MARK: - ListaContactosViewControllerProtocol
+extension ListaContactosViewController: ListaContactosViewControllerProtocol {
+    
+    func reloadDataInView() {
+            self.listaContactosTableView.reloadData()
+    }
+    
+}
+
+
 
 extension ListaContactosViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return self.arrayContactos.count
-        
+        return presenter?.numberOfRowInSection() ?? 0
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
         let cellContactos = self.listaContactosTableView.dequeueReusableCell(withIdentifier: "ContactosCell", for: indexPath) as! ContactosCell
-        cellContactos.configCell(data: self.arrayContactos[indexPath.row])
+        
+        if let modelData = self.presenter?.informationCell(indexPath: indexPath.row) {
+            cellContactos.configCell(data: modelData)
+        }
         return cellContactos
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 70
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        if let modelData = self.presenter?.informationCell(indexPath: indexPath.row) {
+            self.presenter?.showDetailContacto(dto: modelData)
+        }
+        
     }
 }
