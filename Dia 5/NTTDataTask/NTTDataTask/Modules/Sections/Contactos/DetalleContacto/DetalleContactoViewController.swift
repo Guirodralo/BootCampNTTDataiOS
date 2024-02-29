@@ -29,7 +29,7 @@ class DetalleContactoViewController: UIViewController {
     private func setupTableView() {
         self.detalleContactostableView.delegate = self
         self.detalleContactostableView.dataSource = self
-        self.detalleContactostableView.register(UINib(nibName: "ContactosCell", bundle: nil), forCellReuseIdentifier: "ContactosCell")
+        self.detalleContactostableView.register(UINib(nibName: "DetallePerfilCell", bundle: nil), forCellReuseIdentifier: "DetallePerfilCell")
     }
     
 }
@@ -53,14 +53,19 @@ extension DetalleContactoViewController: UITableViewDelegate, UITableViewDataSou
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let cellContactos = self.detalleContactostableView.dequeueReusableCell(withIdentifier: "ContactosCell", for: indexPath) as! ContactosCell
+        let cellContactos = self.detalleContactostableView.dequeueReusableCell(withIdentifier: "DetallePerfilCell", for: indexPath) as! DetallePerfilCell
         
         if let modelData = self.presenter?.informationData() {
-            cellContactos.configCell(data: modelData)
+            cellContactos.configCell(model: modelData)
         }
         return cellContactos
     }
     
     
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        
+        UITableView.automaticDimension
+        
+    }
 }
 

@@ -62,6 +62,7 @@ extension ListaContactosViewController: UITableViewDelegate, UITableViewDataSour
         if let modelData = self.presenter?.informationCell(indexPath: indexPath.row) {
             cellContactos.configCell(data: modelData)
         }
+        
         return cellContactos
     }
     

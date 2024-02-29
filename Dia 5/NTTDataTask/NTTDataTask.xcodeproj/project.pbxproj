@@ -29,6 +29,15 @@
 		3E8BCAD32B8F56A1004A36CF /* DetalleContactoPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E8BCAD22B8F56A1004A36CF /* DetalleContactoPresenter.swift */; };
 		3E8BCB262B8F8B2C004A36CF /* DetallePerfilCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E8BCB242B8F8B2C004A36CF /* DetallePerfilCell.swift */; };
 		3E8BCB272B8F8B2C004A36CF /* DetallePerfilCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3E8BCB252B8F8B2C004A36CF /* DetallePerfilCell.xib */; };
+		3E8BCB292B907684004A36CF /* TaskModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E8BCB282B907683004A36CF /* TaskModel.swift */; };
+		3E8BCB2F2B9078E2004A36CF /* NuevaTareaCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E8BCB2E2B9078E2004A36CF /* NuevaTareaCoordinator.swift */; };
+		3E8BCB322B907B0D004A36CF /* NuevaTareaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E8BCB302B907B0D004A36CF /* NuevaTareaViewController.swift */; };
+		3E8BCB332B907B0D004A36CF /* NuevaTareaViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3E8BCB312B907B0D004A36CF /* NuevaTareaViewController.xib */; };
+		3E8BCB362B90809D004A36CF /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E8BCB352B90809D004A36CF /* Utils.swift */; };
+		3E8BCB392B908EFA004A36CF /* ListaTareasViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E8BCB372B908EFA004A36CF /* ListaTareasViewController.swift */; };
+		3E8BCB3A2B908EFA004A36CF /* ListaTareasViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3E8BCB382B908EFA004A36CF /* ListaTareasViewController.xib */; };
+		3E8BCB3D2B9090DF004A36CF /* ListaTareaCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E8BCB3B2B9090DF004A36CF /* ListaTareaCell.swift */; };
+		3E8BCB3E2B9090DF004A36CF /* ListaTareaCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3E8BCB3C2B9090DF004A36CF /* ListaTareaCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +65,15 @@
 		3E8BCAD22B8F56A1004A36CF /* DetalleContactoPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetalleContactoPresenter.swift; sourceTree = "<group>"; };
 		3E8BCB242B8F8B2C004A36CF /* DetallePerfilCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetallePerfilCell.swift; sourceTree = "<group>"; };
 		3E8BCB252B8F8B2C004A36CF /* DetallePerfilCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetallePerfilCell.xib; sourceTree = "<group>"; };
+		3E8BCB282B907683004A36CF /* TaskModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskModel.swift; sourceTree = "<group>"; };
+		3E8BCB2E2B9078E2004A36CF /* NuevaTareaCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NuevaTareaCoordinator.swift; sourceTree = "<group>"; };
+		3E8BCB302B907B0D004A36CF /* NuevaTareaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NuevaTareaViewController.swift; sourceTree = "<group>"; };
+		3E8BCB312B907B0D004A36CF /* NuevaTareaViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NuevaTareaViewController.xib; sourceTree = "<group>"; };
+		3E8BCB352B90809D004A36CF /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		3E8BCB372B908EFA004A36CF /* ListaTareasViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListaTareasViewController.swift; sourceTree = "<group>"; };
+		3E8BCB382B908EFA004A36CF /* ListaTareasViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListaTareasViewController.xib; sourceTree = "<group>"; };
+		3E8BCB3B2B9090DF004A36CF /* ListaTareaCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListaTareaCell.swift; sourceTree = "<group>"; };
+		3E8BCB3C2B9090DF004A36CF /* ListaTareaCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListaTareaCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +106,7 @@
 		3E8BCA922B8F222F004A36CF /* NTTDataTask */ = {
 			isa = PBXGroup;
 			children = (
+				3E8BCB342B908090004A36CF /* Utils+Helpers */,
 				3E8BCAB92B8F26D4004A36CF /* Models */,
 				3E8BCAB62B8F2477004A36CF /* StubJson */,
 				3E8BCAAA2B8F22DB004A36CF /* Modules */,
@@ -130,6 +149,9 @@
 		3E8BCAAC2B8F22E6004A36CF /* NuevaTarea */ = {
 			isa = PBXGroup;
 			children = (
+				3E8BCB2E2B9078E2004A36CF /* NuevaTareaCoordinator.swift */,
+				3E8BCB312B907B0D004A36CF /* NuevaTareaViewController.xib */,
+				3E8BCB302B907B0D004A36CF /* NuevaTareaViewController.swift */,
 			);
 			path = NuevaTarea;
 			sourceTree = "<group>";
@@ -137,6 +159,9 @@
 		3E8BCAAD2B8F22EA004A36CF /* ListaTareas */ = {
 			isa = PBXGroup;
 			children = (
+				3E8BCB3F2B90927F004A36CF /* Cell */,
+				3E8BCB372B908EFA004A36CF /* ListaTareasViewController.swift */,
+				3E8BCB382B908EFA004A36CF /* ListaTareasViewController.xib */,
 			);
 			path = ListaTareas;
 			sourceTree = "<group>";
@@ -176,6 +201,7 @@
 		3E8BCAB92B8F26D4004A36CF /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				3E8BCB282B907683004A36CF /* TaskModel.swift */,
 				3E8BCABA2B8F26DE004A36CF /* ContactModel.swift */,
 			);
 			path = Models;
@@ -207,6 +233,23 @@
 			children = (
 				3E8BCB242B8F8B2C004A36CF /* DetallePerfilCell.swift */,
 				3E8BCB252B8F8B2C004A36CF /* DetallePerfilCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		3E8BCB342B908090004A36CF /* Utils+Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				3E8BCB352B90809D004A36CF /* Utils.swift */,
+			);
+			path = "Utils+Helpers";
+			sourceTree = "<group>";
+		};
+		3E8BCB3F2B90927F004A36CF /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				3E8BCB3B2B9090DF004A36CF /* ListaTareaCell.swift */,
+				3E8BCB3C2B9090DF004A36CF /* ListaTareaCell.xib */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -269,11 +312,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3E8BCB3E2B9090DF004A36CF /* ListaTareaCell.xib in Resources */,
 				3E8BCAB82B8F248A004A36CF /* contacts.json in Resources */,
 				3E8BCABF2B8F2BB8004A36CF /* ListaContactosViewController.xib in Resources */,
 				3E8BCAC62B8F3005004A36CF /* ContactosCell.xib in Resources */,
 				3E8BCB272B8F8B2C004A36CF /* DetallePerfilCell.xib in Resources */,
+				3E8BCB3A2B908EFA004A36CF /* ListaTareasViewController.xib in Resources */,
 				3E8BCAA02B8F2231004A36CF /* LaunchScreen.storyboard in Resources */,
+				3E8BCB332B907B0D004A36CF /* NuevaTareaViewController.xib in Resources */,
 				3E8BCAB32B8F2333004A36CF /* TabBarHomeViewController.xib in Resources */,
 				3E8BCA9D2B8F2231004A36CF /* Assets.xcassets in Resources */,
 				3E8BCACA2B8F38B3004A36CF /* DetalleContactoViewController.xib in Resources */,
@@ -287,6 +333,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3E8BCB322B907B0D004A36CF /* NuevaTareaViewController.swift in Sources */,
 				3E8BCACC2B8F38C4004A36CF /* DetalleContactoCoordinator.swift in Sources */,
 				3E8BCAC12B8F2BCD004A36CF /* ListaContactosCoordinator.swift in Sources */,
 				3E8BCAD32B8F56A1004A36CF /* DetalleContactoPresenter.swift in Sources */,
@@ -295,10 +342,15 @@
 				3E8BCA942B8F222F004A36CF /* AppDelegate.swift in Sources */,
 				3E8BCAC52B8F3005004A36CF /* ContactosCell.swift in Sources */,
 				3E8BCAB22B8F2333004A36CF /* TabBarHomeViewController.swift in Sources */,
+				3E8BCB2F2B9078E2004A36CF /* NuevaTareaCoordinator.swift in Sources */,
 				3E8BCACF2B8F3D9A004A36CF /* ListaContactosPresenter.swift in Sources */,
+				3E8BCB362B90809D004A36CF /* Utils.swift in Sources */,
 				3E8BCABB2B8F26DE004A36CF /* ContactModel.swift in Sources */,
+				3E8BCB3D2B9090DF004A36CF /* ListaTareaCell.swift in Sources */,
 				3E8BCAD12B8F40F7004A36CF /* ListaContactoRouter.swift in Sources */,
+				3E8BCB392B908EFA004A36CF /* ListaTareasViewController.swift in Sources */,
 				3E8BCAB52B8F2353004A36CF /* TabBarHomeCoordinator.swift in Sources */,
+				3E8BCB292B907684004A36CF /* TaskModel.swift in Sources */,
 				3E8BCAC92B8F38B3004A36CF /* DetalleContactoViewController.swift in Sources */,
 				3E8BCB262B8F8B2C004A36CF /* DetallePerfilCell.swift in Sources */,
 			);
