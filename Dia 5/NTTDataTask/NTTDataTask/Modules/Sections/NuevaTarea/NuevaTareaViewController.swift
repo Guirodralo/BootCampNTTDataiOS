@@ -55,6 +55,16 @@ class NuevaTareaViewController: UIViewController {
         
         
     }
+
+    
+    
+    @IBAction func muestraListaCategorias(_ sender: Any) {
+        
+        let vc = CategoriaViewController()
+        vc.delegate = self
+        self.navigationController?.pushViewController(vc, animated: true)
+        
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -170,4 +180,14 @@ extension NuevaTareaViewController: UIPickerViewDelegate, UIPickerViewDataSource
         self.myPrioridadNuevaTareaTF.text = arrayPrioridad[row]
     }
     
+}
+
+
+//MARK: - CategoriaViewControllerDelegate
+extension NuevaTareaViewController: CategoriaViewControllerDelegate {
+    func nombreCategoriaSeleccionada(_ categoriaClass: CategoriaViewController, categoria row: String) {
+        self.myPresentaNuevaCategoriaLBL.text = row
+    }
+    
+
 }

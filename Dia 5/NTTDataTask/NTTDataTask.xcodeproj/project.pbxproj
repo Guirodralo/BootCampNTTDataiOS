@@ -38,6 +38,8 @@
 		3E8BCB3A2B908EFA004A36CF /* ListaTareasViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3E8BCB382B908EFA004A36CF /* ListaTareasViewController.xib */; };
 		3E8BCB3D2B9090DF004A36CF /* ListaTareaCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E8BCB3B2B9090DF004A36CF /* ListaTareaCell.swift */; };
 		3E8BCB3E2B9090DF004A36CF /* ListaTareaCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3E8BCB3C2B9090DF004A36CF /* ListaTareaCell.xib */; };
+		3E8BCB472B909691004A36CF /* CategoriaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E8BCB452B909691004A36CF /* CategoriaViewController.swift */; };
+		3E8BCB482B909691004A36CF /* CategoriaViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3E8BCB462B909691004A36CF /* CategoriaViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -74,6 +76,8 @@
 		3E8BCB382B908EFA004A36CF /* ListaTareasViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListaTareasViewController.xib; sourceTree = "<group>"; };
 		3E8BCB3B2B9090DF004A36CF /* ListaTareaCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListaTareaCell.swift; sourceTree = "<group>"; };
 		3E8BCB3C2B9090DF004A36CF /* ListaTareaCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListaTareaCell.xib; sourceTree = "<group>"; };
+		3E8BCB452B909691004A36CF /* CategoriaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriaViewController.swift; sourceTree = "<group>"; };
+		3E8BCB462B909691004A36CF /* CategoriaViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoriaViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,6 +153,7 @@
 		3E8BCAAC2B8F22E6004A36CF /* NuevaTarea */ = {
 			isa = PBXGroup;
 			children = (
+				3E8BCB402B909654004A36CF /* Categoria */,
 				3E8BCB2E2B9078E2004A36CF /* NuevaTareaCoordinator.swift */,
 				3E8BCB312B907B0D004A36CF /* NuevaTareaViewController.xib */,
 				3E8BCB302B907B0D004A36CF /* NuevaTareaViewController.swift */,
@@ -254,6 +259,15 @@
 			path = Cell;
 			sourceTree = "<group>";
 		};
+		3E8BCB402B909654004A36CF /* Categoria */ = {
+			isa = PBXGroup;
+			children = (
+				3E8BCB452B909691004A36CF /* CategoriaViewController.swift */,
+				3E8BCB462B909691004A36CF /* CategoriaViewController.xib */,
+			);
+			path = Categoria;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -322,6 +336,7 @@
 				3E8BCB332B907B0D004A36CF /* NuevaTareaViewController.xib in Resources */,
 				3E8BCAB32B8F2333004A36CF /* TabBarHomeViewController.xib in Resources */,
 				3E8BCA9D2B8F2231004A36CF /* Assets.xcassets in Resources */,
+				3E8BCB482B909691004A36CF /* CategoriaViewController.xib in Resources */,
 				3E8BCACA2B8F38B3004A36CF /* DetalleContactoViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -351,6 +366,7 @@
 				3E8BCB392B908EFA004A36CF /* ListaTareasViewController.swift in Sources */,
 				3E8BCAB52B8F2353004A36CF /* TabBarHomeCoordinator.swift in Sources */,
 				3E8BCB292B907684004A36CF /* TaskModel.swift in Sources */,
+				3E8BCB472B909691004A36CF /* CategoriaViewController.swift in Sources */,
 				3E8BCAC92B8F38B3004A36CF /* DetalleContactoViewController.swift in Sources */,
 				3E8BCB262B8F8B2C004A36CF /* DetallePerfilCell.swift in Sources */,
 			);
