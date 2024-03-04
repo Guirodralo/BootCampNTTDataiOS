@@ -6,3 +6,16 @@
 //
 
 import Foundation
+
+protocol SplashPresenterProtocol {
+     
+}
+
+class SplashPresenter: BasePresenter<SplashViewControllerProtocol, SplashRouterProtocol, SplashInteractorProtocol> {
+    
+}
+
+
+extension SplashPresenter: SplashPresenterProtocol {
+    
+}

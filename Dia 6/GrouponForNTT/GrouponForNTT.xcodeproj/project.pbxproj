@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		1128F2EF25BBB822B344786A /* Pods_GrouponForNTT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C9E9D180D738E0B4B461D1B /* Pods_GrouponForNTT.framework */; };
+		3E0BBC0B2B95E4E20062B1CC /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E0BBC0A2B95E4E20062B1CC /* AppCoordinator.swift */; };
+		3E0BBC0E2B95EB830062B1CC /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E0BBC0D2B95EB830062B1CC /* NetworkService.swift */; };
+		3E0BBC102B95EE770062B1CC /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E0BBC0F2B95EE770062B1CC /* NetworkError.swift */; };
+		3E0BBC122B95F9340062B1CC /* EverGrouponServerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E0BBC112B95F9340062B1CC /* EverGrouponServerModel.swift */; };
+		3E0BBC142B95F98C0062B1CC /* SplashProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E0BBC132B95F98C0062B1CC /* SplashProvider.swift */; };
 		3E8BCB562B90B7F1004A36CF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E8BCB552B90B7F1004A36CF /* AppDelegate.swift */; };
 		3E8BCB5F2B90B7F4004A36CF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3E8BCB5E2B90B7F4004A36CF /* Assets.xcassets */; };
 		3E8BCB622B90B7F4004A36CF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3E8BCB602B90B7F4004A36CF /* LaunchScreen.storyboard */; };
@@ -18,7 +23,6 @@
 		3E8BCB762B95CD9A004A36CF /* SplashInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E8BCB752B95CD9A004A36CF /* SplashInteractor.swift */; };
 		3E8BCB782B95CDA6004A36CF /* SplashRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E8BCB772B95CDA6004A36CF /* SplashRouter.swift */; };
 		3E8BCB7B2B95CDBF004A36CF /* SplashCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E8BCB7A2B95CDBF004A36CF /* SplashCoordinator.swift */; };
-		3E8BCB7E2B95CDDC004A36CF /* ServerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E8BCB7D2B95CDDC004A36CF /* ServerModel.swift */; };
 		3E8BCB802B95CDE6004A36CF /* BusinessModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E8BCB7F2B95CDE6004A36CF /* BusinessModel.swift */; };
 		3E8BCB822B95CDEC004A36CF /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E8BCB812B95CDEC004A36CF /* ViewModel.swift */; };
 		3E8BCB852B95CE67004A36CF /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E8BCB842B95CE67004A36CF /* Utils.swift */; };
@@ -27,6 +31,11 @@
 /* Begin PBXFileReference section */
 		1C9E9D180D738E0B4B461D1B /* Pods_GrouponForNTT.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GrouponForNTT.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B98F170214D117428E1BFC3 /* Pods-GrouponForNTT.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GrouponForNTT.release.xcconfig"; path = "Target Support Files/Pods-GrouponForNTT/Pods-GrouponForNTT.release.xcconfig"; sourceTree = "<group>"; };
+		3E0BBC0A2B95E4E20062B1CC /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		3E0BBC0D2B95EB830062B1CC /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		3E0BBC0F2B95EE770062B1CC /* NetworkError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		3E0BBC112B95F9340062B1CC /* EverGrouponServerModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EverGrouponServerModel.swift; sourceTree = "<group>"; };
+		3E0BBC132B95F98C0062B1CC /* SplashProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashProvider.swift; sourceTree = "<group>"; };
 		3E8BCB522B90B7F1004A36CF /* GrouponForNTT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GrouponForNTT.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E8BCB552B90B7F1004A36CF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3E8BCB5E2B90B7F4004A36CF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -39,7 +48,6 @@
 		3E8BCB752B95CD9A004A36CF /* SplashInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashInteractor.swift; sourceTree = "<group>"; };
 		3E8BCB772B95CDA6004A36CF /* SplashRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashRouter.swift; sourceTree = "<group>"; };
 		3E8BCB7A2B95CDBF004A36CF /* SplashCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashCoordinator.swift; sourceTree = "<group>"; };
-		3E8BCB7D2B95CDDC004A36CF /* ServerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerModel.swift; sourceTree = "<group>"; };
 		3E8BCB7F2B95CDE6004A36CF /* BusinessModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessModel.swift; sourceTree = "<group>"; };
 		3E8BCB812B95CDEC004A36CF /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		3E8BCB842B95CE67004A36CF /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
@@ -67,6 +75,24 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		3E0BBC092B95E4B50062B1CC /* CoreApp */ = {
+			isa = PBXGroup;
+			children = (
+				3E8BCB552B90B7F1004A36CF /* AppDelegate.swift */,
+				3E0BBC0A2B95E4E20062B1CC /* AppCoordinator.swift */,
+			);
+			path = CoreApp;
+			sourceTree = "<group>";
+		};
+		3E0BBC0C2B95EB6F0062B1CC /* NetworkService */ = {
+			isa = PBXGroup;
+			children = (
+				3E0BBC0F2B95EE770062B1CC /* NetworkError.swift */,
+				3E0BBC0D2B95EB830062B1CC /* NetworkService.swift */,
+			);
+			path = NetworkService;
+			sourceTree = "<group>";
+		};
 		3E8BCB492B90B7F1004A36CF = {
 			isa = PBXGroup;
 			children = (
@@ -88,10 +114,11 @@
 		3E8BCB542B90B7F1004A36CF /* GrouponForNTT */ = {
 			isa = PBXGroup;
 			children = (
+				3E0BBC0C2B95EB6F0062B1CC /* NetworkService */,
+				3E0BBC092B95E4B50062B1CC /* CoreApp */,
 				3E8BCB832B95CE5D004A36CF /* Utils+Helpers */,
 				3E8BCB6C2B95CD4E004A36CF /* Modules */,
 				3E8BCB692B95C51E004A36CF /* BaseViper */,
-				3E8BCB552B90B7F1004A36CF /* AppDelegate.swift */,
 				3E8BCB5E2B90B7F4004A36CF /* Assets.xcassets */,
 				3E8BCB602B90B7F4004A36CF /* LaunchScreen.storyboard */,
 				3E8BCB632B90B7F4004A36CF /* Info.plist */,
@@ -141,6 +168,7 @@
 			isa = PBXGroup;
 			children = (
 				3E8BCB7A2B95CDBF004A36CF /* SplashCoordinator.swift */,
+				3E0BBC132B95F98C0062B1CC /* SplashProvider.swift */,
 			);
 			path = Coordinator;
 			sourceTree = "<group>";
@@ -148,7 +176,7 @@
 		3E8BCB7C2B95CDCC004A36CF /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				3E8BCB7D2B95CDDC004A36CF /* ServerModel.swift */,
+				3E0BBC112B95F9340062B1CC /* EverGrouponServerModel.swift */,
 				3E8BCB7F2B95CDE6004A36CF /* BusinessModel.swift */,
 				3E8BCB812B95CDEC004A36CF /* ViewModel.swift */,
 			);
@@ -286,16 +314,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3E0BBC0B2B95E4E20062B1CC /* AppCoordinator.swift in Sources */,
+				3E0BBC102B95EE770062B1CC /* NetworkError.swift in Sources */,
 				3E8BCB822B95CDEC004A36CF /* ViewModel.swift in Sources */,
 				3E8BCB712B95CD74004A36CF /* SplashViewController.swift in Sources */,
 				3E8BCB782B95CDA6004A36CF /* SplashRouter.swift in Sources */,
 				3E8BCB562B90B7F1004A36CF /* AppDelegate.swift in Sources */,
+				3E0BBC122B95F9340062B1CC /* EverGrouponServerModel.swift in Sources */,
 				3E8BCB762B95CD9A004A36CF /* SplashInteractor.swift in Sources */,
-				3E8BCB7E2B95CDDC004A36CF /* ServerModel.swift in Sources */,
 				3E8BCB802B95CDE6004A36CF /* BusinessModel.swift in Sources */,
 				3E8BCB852B95CE67004A36CF /* Utils.swift in Sources */,
 				3E8BCB7B2B95CDBF004A36CF /* SplashCoordinator.swift in Sources */,
 				3E8BCB6B2B95C52D004A36CF /* BaseViper.swift in Sources */,
+				3E0BBC0E2B95EB830062B1CC /* NetworkService.swift in Sources */,
+				3E0BBC142B95F98C0062B1CC /* SplashProvider.swift in Sources */,
 				3E8BCB742B95CD8A004A36CF /* SplashPresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -447,7 +479,7 @@
 				INFOPLIST_FILE = GrouponForNTT/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
@@ -482,7 +514,7 @@
 				INFOPLIST_FILE = GrouponForNTT/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;

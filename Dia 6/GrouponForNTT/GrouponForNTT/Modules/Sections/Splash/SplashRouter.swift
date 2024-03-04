@@ -6,3 +6,16 @@
 //
 
 import Foundation
+
+protocol SplashRouterProtocol {
+    
+}
+
+
+class SplashRouter: BaseRouter<SplashPresenterProtocol> {
+    
+}
+
+extension SplashRouter: SplashRouterProtocol {
+    
+}
