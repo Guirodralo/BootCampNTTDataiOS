@@ -62,7 +62,8 @@ class NuevaTareaViewController: UIViewController {
         
         let vc = CategoriaViewController()
         vc.delegate = self
-        self.navigationController?.pushViewController(vc, animated: true)
+        vc.modalPresentationStyle = .pageSheet
+        self.present(vc, animated: true, completion: nil)
         
     }
     

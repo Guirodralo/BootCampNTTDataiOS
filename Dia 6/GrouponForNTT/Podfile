@@ -1,0 +1,9 @@
+
+platform :ios, '15.0'
+use_frameworks!
+
+target 'GrouponForNTT' do
+
+  pod 'Kingfisher'
+
+end

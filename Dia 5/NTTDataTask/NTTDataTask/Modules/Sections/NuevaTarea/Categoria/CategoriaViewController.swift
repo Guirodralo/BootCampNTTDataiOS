@@ -65,7 +65,7 @@ extension CategoriaViewController: UITableViewDelegate, UITableViewDataSource {
             selectIndexPath = indexPath
             nombreCategoriaSeleccionada = listadoCategorias[indexPath.row]
             self.delegate?.nombreCategoriaSeleccionada(self, categoria: nombreCategoriaSeleccionada)
-            self.navigationController?.popViewController(animated: true)
+            self.dismiss(animated: true)
         }
     }
     

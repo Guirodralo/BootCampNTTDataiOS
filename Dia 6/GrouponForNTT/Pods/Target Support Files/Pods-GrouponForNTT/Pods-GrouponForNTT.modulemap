@@ -1,0 +1,6 @@
+framework module Pods_GrouponForNTT {
+  umbrella header "Pods-GrouponForNTT-umbrella.h"
+
+  export *
+  module * { export * }
+}
