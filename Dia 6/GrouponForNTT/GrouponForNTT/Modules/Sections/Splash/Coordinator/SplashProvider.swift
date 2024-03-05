@@ -8,7 +8,7 @@
 import Foundation
 
 protocol SplashProviderProtocol {
-    func fetchData()
+    func fetchData(completion: @escaping(EverGrouponServerModel) -> (), failure: @escaping(NetworkError) -> ())
 }
 
 class SplashProvider {
@@ -19,12 +19,25 @@ class SplashProvider {
 
 
 extension SplashProvider: SplashProviderProtocol {
-    func fetchData() {
-        networkService.requestGeneric(dto: RequestDTO(param: nil, method: .get, endpoint: URLEndpoint.endpointGrouponList), entityClass: EverGrouponServerModel.self) { (result) in
-            //
-        } failure: { (error) in
-            //
+    func fetchData(completion: @escaping(EverGrouponServerModel) -> (), failure: @escaping(NetworkError) -> ()) {
+        networkService.requestGeneric(dto: SplashProviderRequestDTO.requestData(), entityClass: EverGrouponServerModel.self) { [weak self] (result) in
+            guard self != nil else { return }
+            if let resultDes = result {
+                completion(resultDes)
+            }
+        } failure: { [weak self] (error) in
+            guard self != nil else { return }
+            failure(error)
         }
-
+        
     }
+}
+
+
+struct SplashProviderRequestDTO {
+    
+    static func requestData() -> RequestDTO {
+        RequestDTO(param: nil, method: .get, endpoint: URLEndpoint.endpointGrouponList)
+    }
+    
 }

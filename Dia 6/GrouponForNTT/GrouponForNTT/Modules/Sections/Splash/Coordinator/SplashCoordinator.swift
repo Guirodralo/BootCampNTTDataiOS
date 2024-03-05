@@ -26,9 +26,13 @@ final class SplashCoordinator {
         return presenter
     }
     
+    static func interactorOutput() -> SplashInteractorOutputProtocol{
+        let presenter = SplashPresenter()
+        return presenter
+    }
     
     static func interactor() -> SplashInteractorProtocol {
-        let interactor = SplashInteractor()
+        let interactor = SplashInteractor(presenter: interactorOutput())
         return interactor
     }
     

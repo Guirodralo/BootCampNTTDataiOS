@@ -8,13 +8,14 @@
 import UIKit
 
 protocol SplashViewControllerProtocol {
-    
+    func reloadInformationInView()
 }
 
 class SplashViewController: BaseViewController<SplashPresenterProtocol>, ReuseIdentifierViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.presenter?.fetchDataFromPresent()
 
         // Do any additional setup after loading the view.
     }
@@ -25,5 +26,9 @@ class SplashViewController: BaseViewController<SplashPresenterProtocol>, ReuseId
 
 
 extension SplashViewController: SplashViewControllerProtocol {
+    func reloadInformationInView() {
+        //
+    }
+    
     
 }
