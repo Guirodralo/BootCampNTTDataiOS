@@ -27,43 +27,34 @@ POSSIBILITY OF SUCH DAMAGE.
 
 import Foundation
 
-protocol SplashPresenterRouterInterface: PresenterRouterInterface {
-    
+protocol LoginProviderProtocol{
+    func fetchData(completion: @escaping (EverGrouponServerModel) -> (), failure: @escaping (NetworkError) -> ())
 }
 
-protocol SplashPresenterInteractorInterface: PresenterInteractorInterface {
+class LoginProvider{
     
+    let networkService: NetworkServiceProtocol = NetworkService()
 }
 
-protocol SplashPresenterViewInterface: PresenterViewInterface {
-    func getDataFromInteractor(data: [DataViewModel]?)
-}
-
-final class SplashPresenter: PresenterInterface {
+extension LoginProvider: LoginProviderProtocol {
     
-    var router: SplashRouterPresenterInterface!
-    var interactor: SplashInteractorPresenterInterface!
-    weak var view: SplashViewPresenterInterface!
-    
-    
-    
-}
-
-extension SplashPresenter: SplashPresenterRouterInterface {
-    
-}
-
-extension SplashPresenter: SplashPresenterInteractorInterface {
-    func getDataFromInteractor(data: [DataViewModel]?) {
-        if let dataDes = data {
-            self.router.showHomeTabBar(data: dataDes)
+    func fetchData(completion: @escaping (EverGrouponServerModel) -> (), failure: @escaping (NetworkError) -> ()) {
+        
+        networkService.requestGeneric(dto: LoginProviderRequestDTO.requestDataLista(),
+                                      entityClass: EverGrouponServerModel.self) { [weak self] (result) in
+            guard self != nil else { return }
+            if let resultDes = result{
+                completion(resultDes)
+            }
+        } failure: { [weak self] (error) in
+            guard self != nil else { return }
+            failure(error)
         }
     }
-
 }
 
-extension SplashPresenter: SplashPresenterViewInterface {
-    func fetchData() {
-        self.interactor.fetchDataFromInteractor()
+struct LoginProviderRequestDTO {
+    static func requestDataLista() -> RequestDTO {
+        RequestDTO(param: nil, method: .get, endpoint: URLEndpoint.endpointGrouponList)
     }
 }

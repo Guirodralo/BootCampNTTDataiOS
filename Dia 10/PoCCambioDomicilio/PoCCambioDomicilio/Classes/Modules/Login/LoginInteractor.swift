@@ -27,43 +27,18 @@ POSSIBILITY OF SUCH DAMAGE.
 
 import Foundation
 
-protocol SplashPresenterRouterInterface: PresenterRouterInterface {
+protocol LoginInteractorPresenterInterface: InteractorPresenterInterface {
     
 }
 
-protocol SplashPresenterInteractorInterface: PresenterInteractorInterface {
+final class LoginInteractor: InteractorInterface {
     
-}
-
-protocol SplashPresenterViewInterface: PresenterViewInterface {
-    func getDataFromInteractor(data: [DataViewModel]?)
-}
-
-final class SplashPresenter: PresenterInterface {
-    
-    var router: SplashRouterPresenterInterface!
-    var interactor: SplashInteractorPresenterInterface!
-    weak var view: SplashViewPresenterInterface!
-    
+    weak var presenter: LoginPresenterInteractorInterface!
+    let provider: LoginProviderProtocol = LoginProvider()
     
     
 }
 
-extension SplashPresenter: SplashPresenterRouterInterface {
+extension LoginInteractor: LoginInteractorPresenterInterface {
     
-}
-
-extension SplashPresenter: SplashPresenterInteractorInterface {
-    func getDataFromInteractor(data: [DataViewModel]?) {
-        if let dataDes = data {
-            self.router.showHomeTabBar(data: dataDes)
-        }
-    }
-
-}
-
-extension SplashPresenter: SplashPresenterViewInterface {
-    func fetchData() {
-        self.interactor.fetchDataFromInteractor()
-    }
 }

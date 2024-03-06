@@ -26,44 +26,32 @@ POSSIBILITY OF SUCH DAMAGE.
 */
 
 import Foundation
+import UIKit
 
-protocol SplashPresenterRouterInterface: PresenterRouterInterface {
-    
-}
+// MARK: - module builder
 
-protocol SplashPresenterInteractorInterface: PresenterInteractorInterface {
-    
-}
+final class LoginCoordinator: ModuleInterface {
 
-protocol SplashPresenterViewInterface: PresenterViewInterface {
-    func getDataFromInteractor(data: [DataViewModel]?)
-}
-
-final class SplashPresenter: PresenterInterface {
+    typealias View = LoginViewController
+    typealias Presenter = LoginPresenter
+    typealias Router = LoginRouter
+    typealias Interactor = LoginInteractor
     
-    var router: SplashRouterPresenterInterface!
-    var interactor: SplashInteractorPresenterInterface!
-    weak var view: SplashViewPresenterInterface!
-    
-    
-    
-}
-
-extension SplashPresenter: SplashPresenterRouterInterface {
-    
-}
-
-extension SplashPresenter: SplashPresenterInteractorInterface {
-    func getDataFromInteractor(data: [DataViewModel]?) {
-        if let dataDes = data {
-            self.router.showHomeTabBar(data: dataDes)
-        }
+    func navigation(dto: LoginCoordinatorDTO? = nil) -> UINavigationController {
+        UINavigationController(rootViewController: build())
     }
 
+    func build(dto: LoginCoordinatorDTO? = nil) -> UIViewController {
+        let view = View()
+        let interactor = Interactor()
+        let presenter = Presenter()
+        let router = Router()
+        self.coordinator(view: view, presenter: presenter, router: router, interactor: interactor)
+        router.viewController = view
+        return view
+    }
 }
 
-extension SplashPresenter: SplashPresenterViewInterface {
-    func fetchData() {
-        self.interactor.fetchDataFromInteractor()
-    }
+struct LoginCoordinatorDTO {
+    
 }

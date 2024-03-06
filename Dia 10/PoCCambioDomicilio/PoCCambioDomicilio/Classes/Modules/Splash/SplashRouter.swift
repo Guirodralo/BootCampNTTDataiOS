@@ -29,16 +29,23 @@ import Foundation
 import UIKit
 
 protocol SplashRouterPresenterInterface: RouterPresenterInterface {
-
+    func showHomeTabBar(data: [DataViewModel])
 }
 
 final class SplashRouter: RouterInterface {
     
-    
     weak var presenter: SplashPresenterRouterInterface!
     weak var viewController: UIViewController?
+    
 }
 
 extension SplashRouter: SplashRouterPresenterInterface {
-    
+    func showHomeTabBar(data: [DataViewModel]) {
+        DispatchQueue.main.async {
+            let vc = HomeTabBarCoordinator.homeTabBar(dto: HomeTabBarCoordinatorDTO(modelData: data))
+            vc.modalTransitionStyle = .crossDissolve
+            vc.modalPresentationStyle = .fullScreen
+            self.viewController?.present(vc, animated: true, completion: nil)
+        }
+    }
 }

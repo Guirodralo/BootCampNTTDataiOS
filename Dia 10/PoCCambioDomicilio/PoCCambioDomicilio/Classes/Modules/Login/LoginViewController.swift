@@ -25,45 +25,26 @@ ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
 POSSIBILITY OF SUCH DAMAGE.
 */
 
-import Foundation
+import UIKit
 
-protocol SplashPresenterRouterInterface: PresenterRouterInterface {
-    
+protocol LoginViewPresenterInterface: ViewPresenterInterface {
+    func reloadInformationInView()
 }
 
-protocol SplashPresenterInteractorInterface: PresenterInteractorInterface {
-    
-}
+class LoginViewController: UIViewController, ViewInterface {
 
-protocol SplashPresenterViewInterface: PresenterViewInterface {
-    func getDataFromInteractor(data: [DataViewModel]?)
-}
-
-final class SplashPresenter: PresenterInterface {
+    var presenter: LoginPresenterViewInterface!
     
-    var router: SplashRouterPresenterInterface!
-    var interactor: SplashInteractorPresenterInterface!
-    weak var view: SplashViewPresenterInterface!
-    
-    
-    
-}
-
-extension SplashPresenter: SplashPresenterRouterInterface {
-    
-}
-
-extension SplashPresenter: SplashPresenterInteractorInterface {
-    func getDataFromInteractor(data: [DataViewModel]?) {
-        if let dataDes = data {
-            self.router.showHomeTabBar(data: dataDes)
-        }
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        self.presenter.fetchData()
     }
 
 }
 
-extension SplashPresenter: SplashPresenterViewInterface {
-    func fetchData() {
-        self.interactor.fetchDataFromInteractor()
+extension LoginViewController: LoginViewPresenterInterface {
+
+    func reloadInformationInView() {
+        
     }
 }

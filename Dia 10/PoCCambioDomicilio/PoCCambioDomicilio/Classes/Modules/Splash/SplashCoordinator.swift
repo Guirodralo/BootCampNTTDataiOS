@@ -26,32 +26,34 @@ POSSIBILITY OF SUCH DAMAGE.
 */
 
 import Foundation
-import UIKit
 
-// MARK: - module builder
-
-final class SplashCoordinator: ModuleInterface {
-
-    typealias View = SplashViewController
-    typealias Presenter = SplashPresenter
-    typealias Router = SplashRouter
-    typealias Interactor = SplashInteractor
+final class SplashCoordinator {
     
-    func navigation(dto: SplashCoordinatorDTO? = nil) -> UINavigationController {
-        UINavigationController(rootViewController: build())
+    static func navigation() -> BaseNavigation {
+        BaseNavigation(rootViewController: view())
     }
-
-    func build(dto: SplashCoordinatorDTO? = nil) -> UIViewController {
-        let view = View()
-        let interactor = Interactor()
-        let presenter = Presenter()
-        let router = Router()
-        self.coordinator(view: view, presenter: presenter, router: router, interactor: interactor)
-        router.viewController = view
-        return view
+    
+    static func view() -> SplashViewController & SplashViewControllerProtocol {
+        let vc = SplashViewController(nibName: SplashViewController.defaultReuseIdentifierViewController, bundle: nil)
+        vc.presenter = presenter(vc: vc)
+        return vc
     }
-}
-
-struct SplashCoordinatorDTO {
+    
+    static func presenter(vc: SplashViewController) -> SplashPresenterProtocol & SplashInteractorOutputProtocol {
+        let presenter = SplashPresenter(vc: vc)
+        presenter.router = router()
+        presenter.interactor = interactor(pre: presenter)
+        return presenter
+    }
+    
+    
+    static func interactor(pre: SplashPresenter) -> SplashInteractorProtocol {
+        let interactor = SplashInteractor(presenter: pre)
+        return interactor
+    }
+    
+    static func router() -> SplashRouterProtocol {
+        SplashRouter()
+    }
     
 }

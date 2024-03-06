@@ -27,9 +27,8 @@ POSSIBILITY OF SUCH DAMAGE.
 
 import Foundation
 
-protocol SplashProviderProtocol {
-    
-    
+protocol SplashProviderProtocol{
+    func fetchData(completion: @escaping (EverGrouponServerModel) -> (), failure: @escaping (NetworkError) -> ())
 }
 
 class SplashProvider{
@@ -39,9 +38,23 @@ class SplashProvider{
 
 extension SplashProvider: SplashProviderProtocol {
     
-    
+    func fetchData(completion: @escaping (EverGrouponServerModel) -> (), failure: @escaping (NetworkError) -> ()) {
+        
+        networkService.requestGeneric(dto: SplashProviderRequestDTO.requestDataLista(),
+                                      entityClass: EverGrouponServerModel.self) { [weak self] (result) in
+            guard self != nil else { return }
+            if let resultDes = result{
+                completion(resultDes)
+            }
+        } failure: { [weak self] (error) in
+            guard self != nil else { return }
+            failure(error)
+        }
+    }
 }
 
 struct SplashProviderRequestDTO {
-    
+    static func requestDataLista() -> RequestDTO {
+        RequestDTO(param: nil, method: .get, endpoint: URLEndpoint.endpointGrouponList)
+    }
 }

@@ -26,44 +26,19 @@ POSSIBILITY OF SUCH DAMAGE.
 */
 
 import Foundation
+import UIKit
 
-protocol SplashPresenterRouterInterface: PresenterRouterInterface {
-    
-}
-
-protocol SplashPresenterInteractorInterface: PresenterInteractorInterface {
-    
-}
-
-protocol SplashPresenterViewInterface: PresenterViewInterface {
-    func getDataFromInteractor(data: [DataViewModel]?)
-}
-
-final class SplashPresenter: PresenterInterface {
-    
-    var router: SplashRouterPresenterInterface!
-    var interactor: SplashInteractorPresenterInterface!
-    weak var view: SplashViewPresenterInterface!
-    
-    
-    
-}
-
-extension SplashPresenter: SplashPresenterRouterInterface {
-    
-}
-
-extension SplashPresenter: SplashPresenterInteractorInterface {
-    func getDataFromInteractor(data: [DataViewModel]?) {
-        if let dataDes = data {
-            self.router.showHomeTabBar(data: dataDes)
-        }
-    }
+protocol LoginRouterPresenterInterface: RouterPresenterInterface {
 
 }
 
-extension SplashPresenter: SplashPresenterViewInterface {
-    func fetchData() {
-        self.interactor.fetchDataFromInteractor()
-    }
+final class LoginRouter: RouterInterface {
+    
+    
+    weak var presenter: LoginPresenterRouterInterface!
+    weak var viewController: UIViewController?
+}
+
+extension LoginRouter: LoginRouterPresenterInterface {
+    
 }

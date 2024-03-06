@@ -18,6 +18,13 @@
 		3E0BBC762B97520B0062B1CC /* SplashCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E0BBC6F2B97520A0062B1CC /* SplashCoordinator.swift */; };
 		3E0BBC772B97520B0062B1CC /* SplashProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E0BBC702B97520A0062B1CC /* SplashProvider.swift */; };
 		3E0BBC782B97520B0062B1CC /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E0BBC712B97520B0062B1CC /* SplashViewController.swift */; };
+		3E0BBC832B986B430062B1CC /* LoginRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E0BBC7C2B986B420062B1CC /* LoginRouter.swift */; };
+		3E0BBC842B986B430062B1CC /* LoginCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E0BBC7D2B986B420062B1CC /* LoginCoordinator.swift */; };
+		3E0BBC852B986B430062B1CC /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3E0BBC7E2B986B420062B1CC /* LoginViewController.xib */; };
+		3E0BBC862B986B430062B1CC /* LoginProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E0BBC7F2B986B430062B1CC /* LoginProvider.swift */; };
+		3E0BBC872B986B430062B1CC /* LoginInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E0BBC802B986B430062B1CC /* LoginInteractor.swift */; };
+		3E0BBC882B986B430062B1CC /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E0BBC812B986B430062B1CC /* LoginPresenter.swift */; };
+		3E0BBC892B986B430062B1CC /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E0BBC822B986B430062B1CC /* LoginViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +41,13 @@
 		3E0BBC6F2B97520A0062B1CC /* SplashCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashCoordinator.swift; sourceTree = "<group>"; };
 		3E0BBC702B97520A0062B1CC /* SplashProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashProvider.swift; sourceTree = "<group>"; };
 		3E0BBC712B97520B0062B1CC /* SplashViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
+		3E0BBC7C2B986B420062B1CC /* LoginRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginRouter.swift; sourceTree = "<group>"; };
+		3E0BBC7D2B986B420062B1CC /* LoginCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginCoordinator.swift; sourceTree = "<group>"; };
+		3E0BBC7E2B986B420062B1CC /* LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		3E0BBC7F2B986B430062B1CC /* LoginProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginProvider.swift; sourceTree = "<group>"; };
+		3E0BBC802B986B430062B1CC /* LoginInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginInteractor.swift; sourceTree = "<group>"; };
+		3E0BBC812B986B430062B1CC /* LoginPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
+		3E0BBC822B986B430062B1CC /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +135,13 @@
 		3E0BBC682B973EAB0062B1CC /* Login */ = {
 			isa = PBXGroup;
 			children = (
+				3E0BBC7D2B986B420062B1CC /* LoginCoordinator.swift */,
+				3E0BBC802B986B430062B1CC /* LoginInteractor.swift */,
+				3E0BBC812B986B430062B1CC /* LoginPresenter.swift */,
+				3E0BBC7F2B986B430062B1CC /* LoginProvider.swift */,
+				3E0BBC7C2B986B420062B1CC /* LoginRouter.swift */,
+				3E0BBC822B986B430062B1CC /* LoginViewController.swift */,
+				3E0BBC7E2B986B420062B1CC /* LoginViewController.xib */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -204,6 +225,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3E0BBC852B986B430062B1CC /* LoginViewController.xib in Resources */,
 				3E0BBC5B2B973ACB0062B1CC /* LaunchScreen.storyboard in Resources */,
 				3E0BBC722B97520B0062B1CC /* SplashViewController.xib in Resources */,
 				3E0BBC582B973ACB0062B1CC /* Assets.xcassets in Resources */,
@@ -217,11 +239,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3E0BBC892B986B430062B1CC /* LoginViewController.swift in Sources */,
 				3E0BBC4F2B973AC80062B1CC /* AppDelegate.swift in Sources */,
+				3E0BBC862B986B430062B1CC /* LoginProvider.swift in Sources */,
 				3E0BBC742B97520B0062B1CC /* SplashRouter.swift in Sources */,
+				3E0BBC842B986B430062B1CC /* LoginCoordinator.swift in Sources */,
 				3E0BBC752B97520B0062B1CC /* SplashInteractor.swift in Sources */,
 				3E0BBC772B97520B0062B1CC /* SplashProvider.swift in Sources */,
 				3E0BBC762B97520B0062B1CC /* SplashCoordinator.swift in Sources */,
+				3E0BBC832B986B430062B1CC /* LoginRouter.swift in Sources */,
+				3E0BBC882B986B430062B1CC /* LoginPresenter.swift in Sources */,
+				3E0BBC872B986B430062B1CC /* LoginInteractor.swift in Sources */,
 				3E0BBC642B973E540062B1CC /* BaseVIPER.swift in Sources */,
 				3E0BBC732B97520B0062B1CC /* SplashPresenter.swift in Sources */,
 				3E0BBC782B97520B0062B1CC /* SplashViewController.swift in Sources */,
