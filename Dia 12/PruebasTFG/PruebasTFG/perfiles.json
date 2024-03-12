@@ -1,0 +1,142 @@
+[
+    {
+        "id": 1,
+        "nombre": "Juan",
+        "edad": 25,
+        "imagen": "perfil",
+        "telefono": "123456789"
+    },
+    {
+        "id": 2,
+        "nombre": "María",
+        "edad": 30,
+        "imagen": "perfil2",
+        "telefono": "987654321"
+    },
+    {
+        "id": 3,
+        "nombre": "Carlos",
+        "edad": 22,
+        "imagen": "perfil",
+        "telefono": "555666777"
+    },
+    {
+        "id": 4,
+        "nombre": "Laura",
+        "edad": 28,
+        "imagen": "perfil2",
+        "telefono": "333222111"
+    },
+    {
+        "id": 5,
+        "nombre": "Pedro",
+        "edad": 35,
+        "imagen": "perfil",
+        "telefono": "777888999"
+    },
+    {
+        "id": 6,
+        "nombre": "Ana",
+        "edad": 27,
+        "imagen": "perfil2",
+        "telefono": "111222333"
+    },
+    {
+        "id": 7,
+        "nombre": "Luis",
+        "edad": 29,
+        "imagen": "perfil",
+        "telefono": "999888777"
+    },
+    {
+        "id": 8,
+        "nombre": "Sofía",
+        "edad": 31,
+        "imagen": "perfil2",
+        "telefono": "444555666"
+    },
+    {
+        "id": 9,
+        "nombre": "Elena",
+        "edad": 26,
+        "imagen": "perfil",
+        "telefono": "666555444"
+    },
+    {
+        "id": 10,
+        "nombre": "Miguel",
+        "edad": 33,
+        "imagen": "perfil2",
+        "telefono": "222333444"
+    },
+    {
+        "id": 11,
+        "nombre": "Isabel",
+        "edad": 24,
+        "imagen": "perfil",
+        "telefono": "888999000"
+    },
+    {
+        "id": 12,
+        "nombre": "Pablo",
+        "edad": 32,
+        "imagen": "perfil2",
+        "telefono": "777666555"
+    },
+    {
+        "id": 13,
+        "nombre": "Carmen",
+        "edad": 23,
+        "imagen": "perfil",
+        "telefono": "555444333"
+    },
+    {
+        "id": 14,
+        "nombre": "Daniel",
+        "edad": 34,
+        "imagen": "perfil2",
+        "telefono": "444333222"
+    },
+    {
+        "id": 15,
+        "nombre": "Rosa",
+        "edad": 21,
+        "imagen": "perfil",
+        "telefono": "222111000"
+    },
+    {
+        "id": 16,
+        "nombre": "Javier",
+        "edad": 36,
+        "imagen": "perfil2",
+        "telefono": "333444555"
+    },
+    {
+        "id": 17,
+        "nombre": "Sara",
+        "edad": 25,
+        "imagen": "perfil",
+        "telefono": "999000111"
+    },
+    {
+        "id": 18,
+        "nombre": "Diego",
+        "edad": 29,
+        "imagen": "perfil2",
+        "telefono": "666777888"
+    },
+    {
+        "id": 19,
+        "nombre": "Lucía",
+        "edad": 27,
+        "imagen": "perfil",
+        "telefono": "333222111"
+    },
+    {
+        "id": 20,
+        "nombre": "Alejandro",
+        "edad": 30,
+        "imagen": "perfil2",
+        "telefono": "000111222"
+    }
+]
