@@ -33,5 +33,5 @@ struct ItemRow: View {
 }
 
 #Preview {
-    ItemRow(contacto: ContactosModel(id: 1, nombre: "Alberto", edad: 20, imagen: "perfil", telefono: "634423138"))
+    ItemRow(contacto: ContactosModel(id: 1, nombre: "Alberto", edad: 20, imagen: "perfil", telefono: "634423138", isFavorite: true))
 }

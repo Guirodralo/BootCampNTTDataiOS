@@ -12,5 +12,6 @@ struct ContactosModel: Codable, Identifiable {
     let edad: Int?
     let imagen: String?
     let telefono: String?
+    let isFavorite: Bool?
 }
 

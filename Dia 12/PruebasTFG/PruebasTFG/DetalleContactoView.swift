@@ -46,5 +46,5 @@ struct DetalleContactoView: View {
 }
 
 #Preview {
-    DetalleContactoView(contacto: ContactosModel(id: 1, nombre: "Alberto", edad: 20, imagen: "perfil", telefono: "634423138"))
+    DetalleContactoView(contacto: ContactosModel(id: 1, nombre: "Alberto", edad: 20, imagen: "perfil", telefono: "634423138", isFavorite: true))
 }

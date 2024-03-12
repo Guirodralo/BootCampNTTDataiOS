@@ -4,139 +4,159 @@
         "nombre": "Juan",
         "edad": 25,
         "imagen": "perfil",
-        "telefono": "123456789"
+        "telefono": "123456789",
+        "favorite": true
     },
     {
         "id": 2,
         "nombre": "María",
         "edad": 30,
         "imagen": "perfil2",
-        "telefono": "987654321"
+        "telefono": "987654321",
+        "favorite": false
     },
     {
         "id": 3,
         "nombre": "Carlos",
         "edad": 22,
         "imagen": "perfil",
-        "telefono": "555666777"
+        "telefono": "555666777",
+        "favorite": true
     },
     {
         "id": 4,
         "nombre": "Laura",
         "edad": 28,
         "imagen": "perfil2",
-        "telefono": "333222111"
+        "telefono": "333222111",
+        "favorite": false
     },
     {
         "id": 5,
         "nombre": "Pedro",
         "edad": 35,
         "imagen": "perfil",
-        "telefono": "777888999"
+        "telefono": "777888999",
+        "favorite": true
     },
     {
         "id": 6,
         "nombre": "Ana",
         "edad": 27,
         "imagen": "perfil2",
-        "telefono": "111222333"
+        "telefono": "111222333",
+        "favorite": false
     },
     {
         "id": 7,
         "nombre": "Luis",
         "edad": 29,
         "imagen": "perfil",
-        "telefono": "999888777"
+        "telefono": "999888777",
+        "favorite": true
     },
     {
         "id": 8,
         "nombre": "Sofía",
         "edad": 31,
         "imagen": "perfil2",
-        "telefono": "444555666"
+        "telefono": "444555666",
+        "favorite": false
     },
     {
         "id": 9,
         "nombre": "Elena",
         "edad": 26,
         "imagen": "perfil",
-        "telefono": "666555444"
+        "telefono": "666555444",
+        "favorite": true
     },
     {
         "id": 10,
         "nombre": "Miguel",
         "edad": 33,
         "imagen": "perfil2",
-        "telefono": "222333444"
+        "telefono": "222333444",
+        "favorite": false
     },
     {
         "id": 11,
         "nombre": "Isabel",
         "edad": 24,
         "imagen": "perfil",
-        "telefono": "888999000"
+        "telefono": "888999000",
+        "favorite": true
     },
     {
         "id": 12,
         "nombre": "Pablo",
         "edad": 32,
         "imagen": "perfil2",
-        "telefono": "777666555"
+        "telefono": "777666555",
+        "favorite": false
     },
     {
         "id": 13,
         "nombre": "Carmen",
         "edad": 23,
         "imagen": "perfil",
-        "telefono": "555444333"
+        "telefono": "555444333",
+        "favorite": true
     },
     {
         "id": 14,
         "nombre": "Daniel",
         "edad": 34,
         "imagen": "perfil2",
-        "telefono": "444333222"
+        "telefono": "444333222",
+        "favorite": false
     },
     {
         "id": 15,
         "nombre": "Rosa",
         "edad": 21,
         "imagen": "perfil",
-        "telefono": "222111000"
+        "telefono": "222111000",
+        "favorite": true
     },
     {
         "id": 16,
         "nombre": "Javier",
         "edad": 36,
         "imagen": "perfil2",
-        "telefono": "333444555"
+        "telefono": "333444555",
+        "favorite": false
     },
     {
         "id": 17,
         "nombre": "Sara",
         "edad": 25,
         "imagen": "perfil",
-        "telefono": "999000111"
+        "telefono": "999000111",
+        "favorite": true
     },
     {
         "id": 18,
         "nombre": "Diego",
         "edad": 29,
         "imagen": "perfil2",
-        "telefono": "666777888"
+        "telefono": "666777888",
+        "favorite": false
     },
     {
         "id": 19,
         "nombre": "Lucía",
         "edad": 27,
         "imagen": "perfil",
-        "telefono": "333222111"
+        "telefono": "333222111",
+        "favorite": true
     },
     {
         "id": 20,
         "nombre": "Alejandro",
         "edad": 30,
         "imagen": "perfil2",
-        "telefono": "000111222"
+        "telefono": "000111222",
+        "favorite": false
     }
 ]
